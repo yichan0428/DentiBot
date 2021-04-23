@@ -2,7 +2,10 @@
 Chan's target = "192.168.50.123"
 
 [My Computer]
-My Computer = "192.168.50.235"
+My Computer = "172.22.11.1"
+
+[NI-myRIO-1900-0318bfcc]
+NI-myRIO-1900-0318bfcc = "172.22.11.2"
 
 [¬f§Ó's target]
 ¬f§Ó's target = "192.168.50.111"
