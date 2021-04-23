@@ -1,0 +1,1909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EtherCATInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EtherCATInfo.xsd" Version="1.11">
+  <Vendor>
+    <Id>#x29C</Id>
+    <Name>INGENIA</Name>
+    <ImageData16x14>424de6000000000000007600000028000000100000000e000000010004000000000070000000741200007412000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffffffffffffffffffffffffffffffffffffffff8ffffffffffff88ee788fffffff8eeeee77777788eeeeeeee777777eeeeee88ee7777eeeee8fff8ee7eeeeeeefff8eeeeeeeee8fffff8eeeeee88ffffffffff8e8fffffffffffffffffffffffffffffffffffffffffffffff</ImageData16x14>
+  </Vendor>
+  <Descriptions>
+    <Groups>
+      <Group SortOrder="0">
+        <Type>Servo Drives</Type>
+        <Name LcId="1033">EtherCAT Servo Drive </Name>
+        <ImageData16x14>424de6000000000000007600000028000000100000000e000000010004000000000070000000741200007412000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffffffffffffffffffffffffffffffffffffffff8ffffffffffff88ee788fffffff8eeeee77777788eeeeeeee777777eeeeee88ee7777eeeee8fff8ee7eeeeeeefff8eeeeeeeee8fffff8eeeeee88ffffffffff8e8fffffffffffffffffffffffffffffffffffffffffffffff</ImageData16x14>
+      </Group>
+    </Groups>
+    <Devices>
+      <Device Physics="YY">
+        <Type ProductCode="#x19" RevisionNo="#x90140">Ingenia Servo Drive</Type>
+        <Name LcId="1031">Emcl</Name>
+        <Info>
+          <Mailbox>
+            <Timeout>
+              <RequestTimeout>100</RequestTimeout>
+              <ResponseTimeout>2000</ResponseTimeout>
+            </Timeout>
+          </Mailbox>
+        </Info>
+        <GroupType>Servo Drives</GroupType>
+        <Profile>
+          <ProfileNo>402</ProfileNo>
+          <DictionaryFile>DriveDict_0x90140.xml</DictionaryFile>
+        </Profile>
+        <Fmmu>Outputs</Fmmu>
+        <Fmmu>Inputs</Fmmu>
+        <Fmmu>MBoxState</Fmmu>
+        <Sm MinSize="34" MaxSize="192" DefaultSize="128" StartAddress="#x1000" ControlByte="#x26" Enable="1">MBoxOut</Sm>
+        <Sm MinSize="34" MaxSize="192" DefaultSize="128" StartAddress="#x1400" ControlByte="#x22" Enable="1">MBoxIn</Sm>
+        <Sm DefaultSize="6" StartAddress="#x1800" ControlByte="#x64" Enable="1">Outputs</Sm>
+        <Sm DefaultSize="6" StartAddress="#x1c00" ControlByte="#x20" Enable="1">Inputs</Sm>
+        <RxPdo Fixed="0" Sm="2">
+          <Index DependOnSlot="true">#x1600</Index>
+          <Name>RPDO 1 mapping parameter</Name>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x607A</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target position</Name>
+            <Comment>object 0x607A:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1601</Index>
+          <Name>RPDO 2 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60FF</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target velocity</Name>
+            <Comment>object 0x60FF:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1602</Index>
+          <Name>RPDO 3 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6071</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Target torque</Name>
+            <Comment>object 0x6071:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1603</Index>
+          <Name>RPDO 4 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x607A</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target position</Name>
+            <Comment>object 0x607A:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60FF</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target velocity</Name>
+            <Comment>object 0x60FF:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6071</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Target torque</Name>
+            <Comment>object 0x6071:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6072</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Max torque</Name>
+            <Comment>object 0x6072:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6060</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Mode of operation</Name>
+            <Comment>object 0x6060:0</Comment>
+            <DataType>SINT</DataType>
+          </Entry>
+        </RxPdo>
+        <TxPdo Fixed="0" Sm="3">
+          <Index DependOnSlot="true">#x1a00</Index>
+          <Name>TPDO 1 mapping parameter</Name>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a01</Index>
+          <Name>TPDO 2 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a02</Index>
+          <Name>TPDO 3 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6077</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Torque actual value</Name>
+            <Comment>object 0x6077:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a03</Index>
+          <Name>TPDO 4 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6077</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Torque actual value</Name>
+            <Comment>object 0x6077:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6061</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Mode of operation display</Name>
+            <Comment>object 0x6061:0</Comment>
+            <DataType>SINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60F4</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Following error actual value</Name>
+            <Comment>object 0x60F4:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <Mailbox DataLinkLayer="true">
+          <CoE SdoInfo="0" SegmentedSdo="true" PdoAssign="1" PdoConfig="1" CompleteAccess="0">
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Index>#x60C2</Index>
+              <SubIndex>1</SubIndex>
+              <Data>01</Data>
+              <Comment>Interpolation time period</Comment>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Index>#x60C2</Index>
+              <SubIndex>2</SubIndex>
+              <Data>FD</Data>
+              <Comment>Interpolation time index</Comment>
+            </InitCmd>
+          </CoE>
+        </Mailbox>
+        <Dc>
+          <OpMode>
+            <Name>Free Run</Name>
+            <Desc>Free Run</Desc>
+            <AssignActivate>#x0</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0>0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+            <ShiftTimeSync1>0</ShiftTimeSync1>
+          </OpMode>
+          <OpMode>
+            <Name>DC</Name>
+            <Desc>DC-Synchron</Desc>
+            <AssignActivate>#x300</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0 Factor="-2">0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+            <ShiftTimeSync1>0</ShiftTimeSync1>
+          </OpMode>
+        </Dc>
+        <Eeprom>
+          <ByteSize>2048</ByteSize>
+          <ConfigData>050E03440A0000000000</ConfigData>
+        </Eeprom>
+        <ImageData16x14>424de6000000000000007600000028000000100000000e000000010004000000000070000000741200007412000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffffffffffffffffffffffffffffffffffffffff8ffffffffffff88ee788fffffff8eeeee77777788eeeeeeee777777eeeeee88ee7777eeeee8fff8ee7eeeeeeefff8eeeeeeeee8fffff8eeeeee88ffffffffff8e8fffffffffffffffffffffffffffffffffffffffffffffff</ImageData16x14>
+      </Device>
+      <Device Physics="YY">
+        <Type ProductCode="#x15" RevisionNo="#x90140">Pluto Servo Drive</Type>
+        <Name LcId="1031">Pluto</Name>
+        <Info>
+          <Mailbox>
+            <Timeout>
+              <RequestTimeout>100</RequestTimeout>
+              <ResponseTimeout>2000</ResponseTimeout>
+            </Timeout>
+          </Mailbox>
+        </Info>
+        <GroupType>Servo Drives</GroupType>
+        <Profile>
+          <ProfileNo>402</ProfileNo>
+          <DictionaryFile>DriveDict_0x90140.xml</DictionaryFile>
+        </Profile>
+        <Fmmu>Outputs</Fmmu>
+        <Fmmu>Inputs</Fmmu>
+        <Fmmu>MBoxState</Fmmu>
+        <Sm MinSize="34" MaxSize="192" DefaultSize="128" StartAddress="#x1000" ControlByte="#x26" Enable="1">MBoxOut</Sm>
+        <Sm MinSize="34" MaxSize="192" DefaultSize="128" StartAddress="#x1400" ControlByte="#x22" Enable="1">MBoxIn</Sm>
+        <Sm DefaultSize="6" StartAddress="#x1800" ControlByte="#x64" Enable="1">Outputs</Sm>
+        <Sm DefaultSize="6" StartAddress="#x1c00" ControlByte="#x20" Enable="1">Inputs</Sm>
+        <RxPdo Fixed="0" Sm="2">
+          <Index DependOnSlot="true">#x1600</Index>
+          <Name>RPDO 1 mapping parameter</Name>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x607A</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target position</Name>
+            <Comment>object 0x607A:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1601</Index>
+          <Name>RPDO 2 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60FF</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target velocity</Name>
+            <Comment>object 0x60FF:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1602</Index>
+          <Name>RPDO 3 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6071</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Target torque</Name>
+            <Comment>object 0x6071:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1603</Index>
+          <Name>RPDO 4 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x607A</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target position</Name>
+            <Comment>object 0x607A:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60FF</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target velocity</Name>
+            <Comment>object 0x60FF:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6071</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Target torque</Name>
+            <Comment>object 0x6071:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6072</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Max torque</Name>
+            <Comment>object 0x6072:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6060</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Mode of operation</Name>
+            <Comment>object 0x6060:0</Comment>
+            <DataType>SINT</DataType>
+          </Entry>
+        </RxPdo>
+        <TxPdo Fixed="0" Sm="3">
+          <Index DependOnSlot="true">#x1a00</Index>
+          <Name>TPDO 1 mapping parameter</Name>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a01</Index>
+          <Name>TPDO 2 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a02</Index>
+          <Name>TPDO 3 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6077</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Torque actual value</Name>
+            <Comment>object 0x6077:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a03</Index>
+          <Name>TPDO 4 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6077</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Torque actual value</Name>
+            <Comment>object 0x6077:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6061</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Mode of operation display</Name>
+            <Comment>object 0x6061:0</Comment>
+            <DataType>SINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60F4</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Following error actual value</Name>
+            <Comment>object 0x60F4:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <Mailbox DataLinkLayer="true">
+          <CoE SdoInfo="0" SegmentedSdo="true" PdoAssign="1" PdoConfig="1" CompleteAccess="0">
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Index>#x60C2</Index>
+              <SubIndex>1</SubIndex>
+              <Data>01</Data>
+              <Comment>Interpolation time period</Comment>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Index>#x60C2</Index>
+              <SubIndex>2</SubIndex>
+              <Data>FD</Data>
+              <Comment>Interpolation time index</Comment>
+            </InitCmd>
+          </CoE>
+        </Mailbox>
+        <Dc>
+          <OpMode>
+            <Name>Free Run</Name>
+            <Desc>Free Run</Desc>
+            <AssignActivate>#x0</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0>0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+            <ShiftTimeSync1>0</ShiftTimeSync1>
+          </OpMode>
+          <OpMode>
+            <Name>DC</Name>
+            <Desc>DC-Synchron</Desc>
+            <AssignActivate>#x300</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0 Factor="-2">0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+            <ShiftTimeSync1>0</ShiftTimeSync1>
+          </OpMode>
+        </Dc>
+        <Eeprom>
+          <ByteSize>2048</ByteSize>
+          <ConfigData>050E03440A0000000000</ConfigData>
+        </Eeprom>
+        <ImageData16x14>424de6000000000000007600000028000000100000000e000000010004000000000070000000741200007412000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffffffffffffffffffffffffffffffffffffffff8ffffffffffff88ee788fffffff8eeeee77777788eeeeeeee777777eeeeee88ee7777eeeee8fff8ee7eeeeeeefff8eeeeeeeee8fffff8eeeeee88ffffffffff8e8fffffffffffffffffffffffffffffffffffffffffffffff</ImageData16x14>
+      </Device>
+      <Device Physics="YY">
+        <Type ProductCode="#x27" RevisionNo="#x90140">Triton Servo Drive</Type>
+        <Name LcId="1031">Triton</Name>
+        <Info>
+          <Mailbox>
+            <Timeout>
+              <RequestTimeout>100</RequestTimeout>
+              <ResponseTimeout>2000</ResponseTimeout>
+            </Timeout>
+          </Mailbox>
+        </Info>
+        <GroupType>Servo Drives</GroupType>
+        <Profile>
+          <ProfileNo>402</ProfileNo>
+          <DictionaryFile>DriveDict_0x90140.xml</DictionaryFile>
+        </Profile>
+        <Fmmu>Outputs</Fmmu>
+        <Fmmu>Inputs</Fmmu>
+        <Fmmu>MBoxState</Fmmu>
+        <Sm MinSize="34" MaxSize="192" DefaultSize="128" StartAddress="#x1000" ControlByte="#x26" Enable="1">MBoxOut</Sm>
+        <Sm MinSize="34" MaxSize="192" DefaultSize="128" StartAddress="#x1400" ControlByte="#x22" Enable="1">MBoxIn</Sm>
+        <Sm DefaultSize="6" StartAddress="#x1800" ControlByte="#x64" Enable="1">Outputs</Sm>
+        <Sm DefaultSize="6" StartAddress="#x1c00" ControlByte="#x20" Enable="1">Inputs</Sm>
+        <RxPdo Fixed="0" Sm="2">
+          <Index DependOnSlot="true">#x1600</Index>
+          <Name>RPDO 1 mapping parameter</Name>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x607A</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target position</Name>
+            <Comment>object 0x607A:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1601</Index>
+          <Name>RPDO 2 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60FF</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target velocity</Name>
+            <Comment>object 0x60FF:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1602</Index>
+          <Name>RPDO 3 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6071</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Target torque</Name>
+            <Comment>object 0x6071:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1603</Index>
+          <Name>RPDO 4 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x607A</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target position</Name>
+            <Comment>object 0x607A:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60FF</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target velocity</Name>
+            <Comment>object 0x60FF:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6071</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Target torque</Name>
+            <Comment>object 0x6071:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6072</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Max torque</Name>
+            <Comment>object 0x6072:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6060</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Mode of operation</Name>
+            <Comment>object 0x6060:0</Comment>
+            <DataType>SINT</DataType>
+          </Entry>
+        </RxPdo>
+        <TxPdo Fixed="0" Sm="3">
+          <Index DependOnSlot="true">#x1a00</Index>
+          <Name>TPDO 1 mapping parameter</Name>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a01</Index>
+          <Name>TPDO 2 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a02</Index>
+          <Name>TPDO 3 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6077</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Torque actual value</Name>
+            <Comment>object 0x6077:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a03</Index>
+          <Name>TPDO 4 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6077</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Torque actual value</Name>
+            <Comment>object 0x6077:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6061</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Mode of operation display</Name>
+            <Comment>object 0x6061:0</Comment>
+            <DataType>SINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60F4</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Following error actual value</Name>
+            <Comment>object 0x60F4:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <Mailbox DataLinkLayer="true">
+          <CoE SdoInfo="0" SegmentedSdo="true" PdoAssign="1" PdoConfig="1" CompleteAccess="0">
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Index>#x60C2</Index>
+              <SubIndex>1</SubIndex>
+              <Data>01</Data>
+              <Comment>Interpolation time period</Comment>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Index>#x60C2</Index>
+              <SubIndex>2</SubIndex>
+              <Data>FD</Data>
+              <Comment>Interpolation time index</Comment>
+            </InitCmd>
+          </CoE>
+        </Mailbox>
+        <Dc>
+          <OpMode>
+            <Name>Free Run</Name>
+            <Desc>Free Run</Desc>
+            <AssignActivate>#x0</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0>0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+            <ShiftTimeSync1>0</ShiftTimeSync1>
+          </OpMode>
+          <OpMode>
+            <Name>DC</Name>
+            <Desc>DC-Synchron</Desc>
+            <AssignActivate>#x300</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0 Factor="-2">0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+            <ShiftTimeSync1>0</ShiftTimeSync1>
+          </OpMode>
+        </Dc>
+        <Eeprom>
+          <ByteSize>2048</ByteSize>
+          <ConfigData>050E03440A0000000000</ConfigData>
+        </Eeprom>
+        <ImageData16x14>424de6000000000000007600000028000000100000000e000000010004000000000070000000741200007412000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffffffffffffffffffffffffffffffffffffffff8ffffffffffff88ee788fffffff8eeeee77777788eeeeeeee777777eeeeee88ee7777eeeee8fff8ee7eeeeeeefff8eeeeeeeee8fffff8eeeeee88ffffffffff8e8fffffffffffffffffffffffffffffffffffffffffffffff</ImageData16x14>
+      </Device>
+      <Device Physics="YY">
+        <Type ProductCode="#x20" RevisionNo="#x90140">Neptune Servo Drive</Type>
+        <Name LcId="1031">Neptune</Name>
+        <Info>
+          <Mailbox>
+            <Timeout>
+              <RequestTimeout>100</RequestTimeout>
+              <ResponseTimeout>2000</ResponseTimeout>
+            </Timeout>
+          </Mailbox>
+        </Info>
+        <GroupType>Servo Drives</GroupType>
+        <Profile>
+          <ProfileNo>402</ProfileNo>
+          <DictionaryFile>DriveDict_0x90140.xml</DictionaryFile>
+        </Profile>
+        <Fmmu>Outputs</Fmmu>
+        <Fmmu>Inputs</Fmmu>
+        <Fmmu>MBoxState</Fmmu>
+        <Sm MinSize="34" MaxSize="192" DefaultSize="128" StartAddress="#x1000" ControlByte="#x26" Enable="1">MBoxOut</Sm>
+        <Sm MinSize="34" MaxSize="192" DefaultSize="128" StartAddress="#x1400" ControlByte="#x22" Enable="1">MBoxIn</Sm>
+        <Sm DefaultSize="6" StartAddress="#x1800" ControlByte="#x64" Enable="1">Outputs</Sm>
+        <Sm DefaultSize="6" StartAddress="#x1c00" ControlByte="#x20" Enable="1">Inputs</Sm>
+        <RxPdo Fixed="0" Sm="2">
+          <Index DependOnSlot="true">#x1600</Index>
+          <Name>RPDO 1 mapping parameter</Name>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x607A</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target position</Name>
+            <Comment>object 0x607A:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1601</Index>
+          <Name>RPDO 2 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60FF</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target velocity</Name>
+            <Comment>object 0x60FF:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1602</Index>
+          <Name>RPDO 3 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6071</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Target torque</Name>
+            <Comment>object 0x6071:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1603</Index>
+          <Name>RPDO 4 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x607A</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target position</Name>
+            <Comment>object 0x607A:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60FF</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target velocity</Name>
+            <Comment>object 0x60FF:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6071</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Target torque</Name>
+            <Comment>object 0x6071:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6072</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Max torque</Name>
+            <Comment>object 0x6072:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6060</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Mode of operation</Name>
+            <Comment>object 0x6060:0</Comment>
+            <DataType>SINT</DataType>
+          </Entry>
+        </RxPdo>
+        <TxPdo Fixed="0" Sm="3">
+          <Index DependOnSlot="true">#x1a00</Index>
+          <Name>TPDO 1 mapping parameter</Name>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a01</Index>
+          <Name>TPDO 2 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a02</Index>
+          <Name>TPDO 3 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6077</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Torque actual value</Name>
+            <Comment>object 0x6077:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a03</Index>
+          <Name>TPDO 4 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6077</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Torque actual value</Name>
+            <Comment>object 0x6077:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6061</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Mode of operation display</Name>
+            <Comment>object 0x6061:0</Comment>
+            <DataType>SINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60F4</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Following error actual value</Name>
+            <Comment>object 0x60F4:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <Mailbox DataLinkLayer="true">
+          <CoE SdoInfo="0" SegmentedSdo="true" PdoAssign="1" PdoConfig="1" CompleteAccess="0">
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Index>#x60C2</Index>
+              <SubIndex>1</SubIndex>
+              <Data>01</Data>
+              <Comment>Interpolation time period</Comment>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Index>#x60C2</Index>
+              <SubIndex>2</SubIndex>
+              <Data>FD</Data>
+              <Comment>Interpolation time index</Comment>
+            </InitCmd>
+          </CoE>
+        </Mailbox>
+        <Dc>
+          <OpMode>
+            <Name>Free Run</Name>
+            <Desc>Free Run</Desc>
+            <AssignActivate>#x0</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0>0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+            <ShiftTimeSync1>0</ShiftTimeSync1>
+          </OpMode>
+          <OpMode>
+            <Name>DC</Name>
+            <Desc>DC-Synchron</Desc>
+            <AssignActivate>#x300</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0 Factor="-2">0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+            <ShiftTimeSync1>0</ShiftTimeSync1>
+          </OpMode>
+        </Dc>
+        <Eeprom>
+          <ByteSize>2048</ByteSize>
+          <ConfigData>050E03440A0000000000</ConfigData>
+        </Eeprom>
+        <ImageData16x14>424de6000000000000007600000028000000100000000e000000010004000000000070000000741200007412000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffffffffffffffffffffffffffffffffffffffff8ffffffffffff88ee788fffffff8eeeee77777788eeeeeeee777777eeeeee88ee7777eeeee8fff8ee7eeeeeeefff8eeeeeeeee8fffff8eeeeee88ffffffffff8e8fffffffffffffffffffffffffffffffffffffffffffffff</ImageData16x14>
+      </Device>
+      <Device Physics="YY">
+        <Type ProductCode="#x21" RevisionNo="#x90140">Jupiter Servo Drive</Type>
+        <Name LcId="1031">Jupiter</Name>
+        <Info>
+          <Mailbox>
+            <Timeout>
+              <RequestTimeout>100</RequestTimeout>
+              <ResponseTimeout>2000</ResponseTimeout>
+            </Timeout>
+          </Mailbox>
+        </Info>
+        <GroupType>Servo Drives</GroupType>
+        <Profile>
+          <ProfileNo>402</ProfileNo>
+          <DictionaryFile>DriveDict_0x90140.xml</DictionaryFile>
+        </Profile>
+        <Fmmu>Outputs</Fmmu>
+        <Fmmu>Inputs</Fmmu>
+        <Fmmu>MBoxState</Fmmu>
+        <Sm MinSize="34" MaxSize="192" DefaultSize="128" StartAddress="#x1000" ControlByte="#x26" Enable="1">MBoxOut</Sm>
+        <Sm MinSize="34" MaxSize="192" DefaultSize="128" StartAddress="#x1400" ControlByte="#x22" Enable="1">MBoxIn</Sm>
+        <Sm DefaultSize="6" StartAddress="#x1800" ControlByte="#x64" Enable="1">Outputs</Sm>
+        <Sm DefaultSize="6" StartAddress="#x1c00" ControlByte="#x20" Enable="1">Inputs</Sm>
+        <RxPdo Fixed="0" Sm="2">
+          <Index DependOnSlot="true">#x1600</Index>
+          <Name>RPDO 1 mapping parameter</Name>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x607A</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target position</Name>
+            <Comment>object 0x607A:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1601</Index>
+          <Name>RPDO 2 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60FF</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target velocity</Name>
+            <Comment>object 0x60FF:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1602</Index>
+          <Name>RPDO 3 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6071</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Target torque</Name>
+            <Comment>object 0x6071:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1603</Index>
+          <Name>RPDO 4 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x607A</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target position</Name>
+            <Comment>object 0x607A:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60FF</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target velocity</Name>
+            <Comment>object 0x60FF:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6071</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Target torque</Name>
+            <Comment>object 0x6071:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6072</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Max torque</Name>
+            <Comment>object 0x6072:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6060</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Mode of operation</Name>
+            <Comment>object 0x6060:0</Comment>
+            <DataType>SINT</DataType>
+          </Entry>
+        </RxPdo>
+        <TxPdo Fixed="0" Sm="3">
+          <Index DependOnSlot="true">#x1a00</Index>
+          <Name>TPDO 1 mapping parameter</Name>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a01</Index>
+          <Name>TPDO 2 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a02</Index>
+          <Name>TPDO 3 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6077</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Torque actual value</Name>
+            <Comment>object 0x6077:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a03</Index>
+          <Name>TPDO 4 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6077</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Torque actual value</Name>
+            <Comment>object 0x6077:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6061</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Mode of operation display</Name>
+            <Comment>object 0x6061:0</Comment>
+            <DataType>SINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60F4</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Following error actual value</Name>
+            <Comment>object 0x60F4:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <Mailbox DataLinkLayer="true">
+          <CoE SdoInfo="0" SegmentedSdo="true" PdoAssign="1" PdoConfig="1" CompleteAccess="0">
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Index>#x60C2</Index>
+              <SubIndex>1</SubIndex>
+              <Data>01</Data>
+              <Comment>Interpolation time period</Comment>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Index>#x60C2</Index>
+              <SubIndex>2</SubIndex>
+              <Data>FD</Data>
+              <Comment>Interpolation time index</Comment>
+            </InitCmd>
+          </CoE>
+        </Mailbox>
+        <Dc>
+          <OpMode>
+            <Name>Free Run</Name>
+            <Desc>Free Run</Desc>
+            <AssignActivate>#x0</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0>0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+            <ShiftTimeSync1>0</ShiftTimeSync1>
+          </OpMode>
+          <OpMode>
+            <Name>DC</Name>
+            <Desc>DC-Synchron</Desc>
+            <AssignActivate>#x300</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0 Factor="-2">0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+            <ShiftTimeSync1>0</ShiftTimeSync1>
+          </OpMode>
+        </Dc>
+        <Eeprom>
+          <ByteSize>2048</ByteSize>
+          <ConfigData>050E03440A0000000000</ConfigData>
+        </Eeprom>
+        <ImageData16x14>424de6000000000000007600000028000000100000000e000000010004000000000070000000741200007412000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffffffffffffffffffffffffffffffffffffffff8ffffffffffff88ee788fffffff8eeeee77777788eeeeeeee777777eeeeee88ee7777eeeee8fff8ee7eeeeeeefff8eeeeeeeee8fffff8eeeeee88ffffffffff8e8fffffffffffffffffffffffffffffffffffffffffffffff</ImageData16x14>
+      </Device>
+      <Device Physics="YY">
+        <Type ProductCode="#x26" RevisionNo="#x90140">Nix Servo Drive</Type>
+        <Name LcId="1031">Nix</Name>
+        <Info>
+          <Mailbox>
+            <Timeout>
+              <RequestTimeout>100</RequestTimeout>
+              <ResponseTimeout>2000</ResponseTimeout>
+            </Timeout>
+          </Mailbox>
+        </Info>
+        <GroupType>Servo Drives</GroupType>
+        <Profile>
+          <ProfileNo>402</ProfileNo>
+          <DictionaryFile>DriveDict_0x90140.xml</DictionaryFile>
+        </Profile>
+        <Fmmu>Outputs</Fmmu>
+        <Fmmu>Inputs</Fmmu>
+        <Fmmu>MBoxState</Fmmu>
+        <Sm MinSize="34" MaxSize="192" DefaultSize="128" StartAddress="#x1000" ControlByte="#x26" Enable="1">MBoxOut</Sm>
+        <Sm MinSize="34" MaxSize="192" DefaultSize="128" StartAddress="#x1400" ControlByte="#x22" Enable="1">MBoxIn</Sm>
+        <Sm DefaultSize="6" StartAddress="#x1800" ControlByte="#x64" Enable="1">Outputs</Sm>
+        <Sm DefaultSize="6" StartAddress="#x1c00" ControlByte="#x20" Enable="1">Inputs</Sm>
+        <RxPdo Fixed="0" Sm="2">
+          <Index DependOnSlot="true">#x1600</Index>
+          <Name>RPDO 1 mapping parameter</Name>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x607A</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target position</Name>
+            <Comment>object 0x607A:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1601</Index>
+          <Name>RPDO 2 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60FF</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target velocity</Name>
+            <Comment>object 0x60FF:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1602</Index>
+          <Name>RPDO 3 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1603</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6071</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Target torque</Name>
+            <Comment>object 0x6071:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1603</Index>
+          <Name>RPDO 4 mapping parameter</Name>
+          <Exclude>#x1600</Exclude>
+          <Exclude>#x1601</Exclude>
+          <Exclude>#x1602</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6040</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Controlword</Name>
+            <Comment>object 0x6040:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x607A</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target position</Name>
+            <Comment>object 0x607A:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60FF</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Target velocity</Name>
+            <Comment>object 0x60FF:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6071</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Target torque</Name>
+            <Comment>object 0x6071:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6072</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Max torque</Name>
+            <Comment>object 0x6072:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6060</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Mode of operation</Name>
+            <Comment>object 0x6060:0</Comment>
+            <DataType>SINT</DataType>
+          </Entry>
+        </RxPdo>
+        <TxPdo Fixed="0" Sm="3">
+          <Index DependOnSlot="true">#x1a00</Index>
+          <Name>TPDO 1 mapping parameter</Name>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a01</Index>
+          <Name>TPDO 2 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a02</Index>
+          <Name>TPDO 3 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A03</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6077</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Torque actual value</Name>
+            <Comment>object 0x6077:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="0">
+          <Index DependOnSlot="true">#x1a03</Index>
+          <Name>TPDO 4 mapping parameter</Name>
+          <Exclude>#x1A00</Exclude>
+          <Exclude>#x1A01</Exclude>
+          <Exclude>#x1A02</Exclude>
+          <Entry>
+            <Index DependOnSlot="true">#x6041</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Statusword</Name>
+            <Comment>object 0x6041:0</Comment>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6064</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Position actual value</Name>
+            <Comment>object 0x6064:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6077</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Torque actual value</Name>
+            <Comment>object 0x6077:0</Comment>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x6061</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Mode of operation display</Name>
+            <Comment>object 0x6061:0</Comment>
+            <DataType>SINT</DataType>
+          </Entry>
+          <Entry>
+            <Index DependOnSlot="true">#x60F4</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Following error actual value</Name>
+            <Comment>object 0x60F4:0</Comment>
+            <DataType>DINT</DataType>
+          </Entry>
+        </TxPdo>
+        <Mailbox DataLinkLayer="true">
+          <CoE SdoInfo="0" SegmentedSdo="true" PdoAssign="1" PdoConfig="1" CompleteAccess="0">
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Index>#x60C2</Index>
+              <SubIndex>1</SubIndex>
+              <Data>01</Data>
+              <Comment>Interpolation time period</Comment>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Index>#x60C2</Index>
+              <SubIndex>2</SubIndex>
+              <Data>FD</Data>
+              <Comment>Interpolation time index</Comment>
+            </InitCmd>
+          </CoE>
+        </Mailbox>
+        <Dc>
+          <OpMode>
+            <Name>Free Run</Name>
+            <Desc>Free Run</Desc>
+            <AssignActivate>#x0</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0>0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+            <ShiftTimeSync1>0</ShiftTimeSync1>
+          </OpMode>
+          <OpMode>
+            <Name>DC</Name>
+            <Desc>DC-Synchron</Desc>
+            <AssignActivate>#x300</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0 Factor="-2">0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+            <ShiftTimeSync1>0</ShiftTimeSync1>
+          </OpMode>
+        </Dc>
+        <Eeprom>
+          <ByteSize>2048</ByteSize>
+          <ConfigData>050E03440A0000000000</ConfigData>
+        </Eeprom>
+        <ImageData16x14>424de6000000000000007600000028000000100000000e000000010004000000000070000000741200007412000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffffffffffffffffffffffffffffffffffffffff8ffffffffffff88ee788fffffff8eeeee77777788eeeeeeee777777eeeeee88ee7777eeeee8fff8ee7eeeeeeefff8eeeeeeeee8fffff8eeeeee88ffffffffff8e8fffffffffffffffffffffffffffffffffffffffffffffff</ImageData16x14>
+      </Device>
+    </Devices>
+  </Descriptions>
+</EtherCATInfo>

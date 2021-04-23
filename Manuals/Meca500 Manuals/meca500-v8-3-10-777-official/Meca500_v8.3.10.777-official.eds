@@ -1,0 +1,964 @@
+$ EZ-EDS Version 3.27.1.20191218 Generated Electronic Data Sheet
+
+$ This file describes Mecademic's Meca500 robot parameters for EtherNet/IP
+
+[File]
+        DescText = "Meca500 robot EtherNet/IP controlling API";
+        CreateDate = 02-10-2020;
+        CreateTime = 10:00:00;
+        ModDate = 11-19-2020;
+        ModTime = 10:30:00;
+        Revision = 1.2;
+        HomeURL = "www.mecademic.com";
+        1_IOC_Details_License = 0x8B252BAD;
+
+[Device]
+        VendCode = 1565;                $ Mecademic Vendor Id
+        VendName = "Mecademic Inc.";    $ Vendor Name
+        ProdType = 43;                  $ Generic device
+        ProdTypeStr = "Generic Device"; $ Generic device
+        ProdCode = 500;                 $ Meca500 product code
+        MajRev = 1;
+        MinRev = 1;
+        ProdName = "Meca500";
+        Catalog = "Meca500";
+
+$ The device classification value, ModbusTCP or ModbusSL
+[Device Classification]
+        Class1 = EtherNetIP;
+
+[Params]
+        Param1 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xD1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Reserved",             $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param11 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC8,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "CyclicInterval",       $ name
+                "us",                   $ units
+                "",                     $ help string
+                10000,10000000,10000,   $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param601001 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "RobotStatus_Error",    $ name
+                "",                     $ units
+                "Error code (refer to Meca500 documentation for specific error code meaning)",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param601002 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "RobotStatus",          $ name
+                "",                     $ units
+                "Various robot status bits",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum601002 =
+                0,"RobotStatus_Busy",
+                1,"RobotStatus_Activated",
+                2,"RobotStatus_Homed",
+                3,"RobotStatus_SimActivated",
+                4,"RobotStatus_BrakesEngaged";
+
+        Param601501 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC4,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MotionStatus_Checkpoint",    $ name
+                "",                     $ units
+                "Indicates which checkpoint id the robot has reached last",    $ help string
+                0,8191,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param601502 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MotionStatus_MoveID",  $ name
+                "",                     $ units
+                "Latest \"move id\" that was received and queued by the robot",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param601503 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MotionStatus_FIFOSpace",    $ name
+                "",                     $ units
+                "Number of commands that the robot can receive and queue at the moment",    $ help string
+                0,13000,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param601504 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MotionStatus",         $ name
+                "",                     $ units
+                "Various motion status bits",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum601504 =
+                0,"MotionStatus_Paused",
+                1,"MotionStatus_EOB",
+                2,"MotionStatus_EOM",
+                3,"MotionStatus_Cleared",
+                4,"MotionStatus_PStop";
+
+        Param601505 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MotionStatus_OfflineProgramId",    $ name
+                "",                     $ units
+                "Id of the offline program currently running (0 if none)",    $ help string
+                0,0,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603001 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "JointSet_Joint1Pos",   $ name
+                "deg",                  $ units
+                "Joint 1's angular position (-175 to +175)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603002 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "JointSet_Joint2Pos",   $ name
+                "deg",                  $ units
+                "Joint 2's angular position (-70 to +90)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603003 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "JointSet_Joint3Pos",   $ name
+                "deg",                  $ units
+                "Joint 3's angular position (-135 to +70)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603004 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "JointSet_Joint4Pos",   $ name
+                "deg",                  $ units
+                "Joint 4's angular position (-170 to +170)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603005 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "JointSet_Joint5Pos",   $ name
+                "deg",                  $ units
+                "Joint 5's angular position (-115 to +115)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603006 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "JointSet_Joint6Pos",   $ name
+                "deg",                  $ units
+                "Joint 6's angular position (-36000 to +36000)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603101 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "EndEffectorPose_PosX", $ name
+                "mm",                   $ units
+                "X position",           $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603102 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "EndEffectorPose_PosY", $ name
+                "mm",                   $ units
+                "Y position",           $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603103 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "EndEffectorPose_PosZ", $ name
+                "mm",                   $ units
+                "Z position",           $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603104 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "EndEffectorPose_AngA", $ name
+                "deg",                  $ units
+                "Alpha-angle position", $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603105 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "EndEffectorPose_AngB", $ name
+                "deg",                  $ units
+                "Beta-angle position",  $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603106 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "EndEffectorPose_AngC", $ name
+                "deg",                  $ units
+                "Gamma-angle position", $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603201 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "JointVelocity_Joint1Vel",    $ name
+                "deg/s",                $ units
+                "Joint 1's angular position",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603202 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "JointVelocity_Joint2Vel",    $ name
+                "deg/s",                $ units
+                "Joint 2's angular position",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603203 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "JointVelocity_Joint3Vel",    $ name
+                "deg/s",                $ units
+                "Joint 3's angular position",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603204 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "JointVelocity_Joint4Vel",    $ name
+                "deg/s",                $ units
+                "Joint 4's angular position",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603205 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "JointVelocity_Joint5Vel",    $ name
+                "deg/s",                $ units
+                "Joint 5's angular position",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603206 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "JointVelocity_Joint6Vel",    $ name
+                "deg/s",                $ units
+                "Joint 6's angular position",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603301 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "TorqueRatio_Joint1Torque",    $ name
+                "pct",                  $ units
+                "Joint 1's torque ratio",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603302 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "TorqueRatio_Joint2Torque",    $ name
+                "pct",                  $ units
+                "Joint 2's torque ratio",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603303 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "TorqueRatio_Joint3Torque",    $ name
+                "pct",                  $ units
+                "Joint 3's torque ratio",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603304 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "TorqueRatio_Joint4Torque",    $ name
+                "pct",                  $ units
+                "Joint 4's torque ratio",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603305 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "TorqueRatio_Joint5Torque",    $ name
+                "pct",                  $ units
+                "Joint 5's torque ratio",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param603306 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "TorqueRatio_Joint6Torque",    $ name
+                "pct",                  $ units
+                "Joint 6's torque ratio",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param604001 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC4,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "Accelerometer_X",      $ name
+                "1/19000 of G",         $ units
+                "X acceleration in the FRF reference",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param604002 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC4,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "Accelerometer_Y",      $ name
+                "1/19000 of G",         $ units
+                "Y acceleration in the FRF reference",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param604003 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC4,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "Accelerometer_Z",      $ name
+                "1/19000 of G",         $ units
+                "Z acceleration in the FRF reference",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param604501 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD3,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "GripperStatus",        $ name
+                "",                     $ units
+                "Various gripper status bits",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum604501 =
+                0,"GripperStatus_Detected",
+                1,"GripperStatus_Homed",
+                2,"GripperStatus_HoldingPart",
+                3,"GripperStatus_LimitReached",
+                4,"GripperStatus_Error",
+                5,"GripperStatus_Overload";
+
+        Param604601 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Configuration_C1",     $ name
+                "",                     $ units
+                "Current first inverse kinematics configuration (either -1 or 1)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param604602 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Configuration_C3",     $ name
+                "",                     $ units
+                "Current second inverse kinematics configuration (either -1 or 1)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param604603 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Configuration_C5",     $ name
+                "",                     $ units
+                "Current third inverse kinematics configuration (either -1 or 1)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param720001 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x4000,                 $ Descriptor
+                0xD3,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "RobotControl",         $ name
+                "",                     $ units
+                "Various robot control bits",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum720001 =
+                0,"RobotControl_Deactivate",
+                1,"RobotControl_Activate",
+                2,"RobotControl_Home",
+                3,"RobotControl_ResetError",
+                4,"RobotControl_EnableSimulation";
+
+        Param730500 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x4000,                 $ Descriptor
+                0xC4,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MotionCommand",        $ name
+                "",                     $ units
+                "The move command to apply",    $     MX_MOTION_CMD_TYPE_NO_MOVE    = 0,       ///< No movement (noop)
+                                                $     MX_MOTION_CMD_TYPE_MOVEJOINTS = 1,       ///< Move each joint to given absolute position in degrees
+                                                $     MX_MOTION_CMD_TYPE_MOVEPOSE   = 2,       ///< Move to a position relative to WRF (x-y-z in mm, a-b-c in degrees)
+                                                $                                              ///< All joints start and end movement at the same time
+                                                $     MX_MOTION_CMD_TYPE_MOVELIN = 3,          ///< Move to a position relative to WRF (x-y-z in mm, a-b-c in degrees)
+                                                $                                              ///< Movement of the tool is linear in space (follows a straight line)
+                                                $     MX_MOTION_CMD_TYPE_MOVELINRELTRF = 4,    ///< Relative movement (relative to the current TRF position)
+                                                $     MX_MOTION_CMD_TYPE_MOVELINRELWRF = 5,    ///< Relative movement (relative to the current WRF position)
+                                                $     MX_MOTION_CMD_TYPE_DELAY         = 6,    ///< Delay in seconds before processing the next command
+                                                $     MX_MOTION_CMD_TYPE_SETBLENDING   = 7,    ///< Set blending ration (in percent) between consecutive move commands
+                                                $     MX_MOTION_CMD_TYPE_SETJOINTVEL   = 8,    ///< Set joint target velocity in percent (for MovePost and MoveJoint only)
+                                                $     MX_MOTION_CMD_TYPE_SETJOINTACC   = 9,    ///< Set joint acceleration in percent (for MovePost and MoveJoint only)
+                                                $     MX_MOTION_CMD_TYPE_SETCARTANGVEL = 10,   ///< Set the max angular velocity for MoveLinX commands, in deg/s
+                                                $     MX_MOTION_CMD_TYPE_SETCARTLINVEL = 11,   ///< Set the max linear velocity for MoveLinX commands in mm/s
+                                                $     MX_MOTION_CMD_TYPE_SETCARTACC    = 12,   ///< Set maximum cartesian acceleration (linear and anugular) in percent
+                                                $     MX_MOTION_CMD_TYPE_SETTRF        = 13,   ///< Set the pose of the RTF with respect of the FRF
+                                                $     MX_MOTION_CMD_TYPE_SETWRF        = 14,   ///< Set the pose of the WRF with respect of the BRF
+                                                $     MX_MOTION_CMD_TYPE_SETCONF       = 15,   ///< Set the desired inverse kinematic config for MovePose.
+                                                $                                              ///< 3 arguments (c1, c3, c5) can be either -1 or 1.
+                                                $     MX_MOTION_CMD_TYPE_SETAUTOCONF   = 16,   ///< Enable or disable automatic configuration for inverse kinematic
+                                                $     MX_MOTION_CMD_TYPE_SETCHECKPOINT = 17,   ///< Inserts a "set checkpoint" command between two moves, so robot status
+                                                $                                              ///< reports that checkpoint id when reaching that command in the queue
+                                                $     MX_MOTION_CMD_TYPE_GRIPPER        = 18,  ///< Open or close the gripper
+                                                $     MX_MOTION_CMD_TYPE_GRIPPERVEL     = 19,  ///< Limit the velocity of the gripper fingers in percent
+                                                $     MX_MOTION_CMD_TYPE_GRIPPERFORCE   = 20,  ///< Limit the grip force of the gripper in percent
+                                                $     MX_MOTION_CMD_TYPE_MOVEJOINTSVEL  = 21,  ///< Set current mode to "join velocity mode"
+                                                $     MX_MOTION_CMD_TYPE_MOVELINVELWRF  = 22,  ///< Set current mode to "cartesian WRF velocity mode"
+                                                $     MX_MOTION_CMD_TYPE_MOVELINVELTRF  = 23,  ///< Set current mode to "cartesian TRF velocity mode"
+                                                $     MX_MOTION_CMD_TYPE_VELCTRLTIMEOUT = 24,  ///< Timeout for current velocity mode
+                                                $     MX_MOTION_CMD_TYPE_START_OFFLINE_PROGRAM = 100,  ///< Start an offline program with specified id
+                                                $     MX_MOTION_CMD_TYPE_SETDBG = 1000,  ///< Enable debug options on the robot. For Mecademic use only.
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param730501 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x4000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MotionCommand_Arg1",   $ name
+                "",                     $ units
+                "Argument 1 for move command (meaning depends on the command id)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param730502 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x4000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MotionCommand_Arg2",   $ name
+                "",                     $ units
+                "Argument 2 for move command (meaning depends on the command id)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param730503 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x4000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MotionCommand_Arg3",   $ name
+                "",                     $ units
+                "Argument 3 for move command (meaning depends on the command id)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param730504 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x4000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MotionCommand_Arg4",   $ name
+                "",                     $ units
+                "Argument 4 for move command (meaning depends on the command id)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param730505 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x4000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MotionCommand_Arg5",   $ name
+                "",                     $ units
+                "Argument 5 for move command (meaning depends on the command id)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param730506 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x4000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MotionCommand_Arg6",   $ name
+                "",                     $ units
+                "Argument 6 for move command (meaning depends on the command id)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param731001 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x4000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MotionControl_MoveId", $ name
+                "",                     $ units
+                "User-defined id of the command currently being sent (The robot will consider a new command is sent only when moveId is changed)",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param731002 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x4000,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MotionControl",        $ name
+                "",                     $ units
+                "Various motion control bits",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum731002 =
+                0,"MotionControl_Setpoint",
+                1,"MotionControl_Pause",
+                2,"MotionControl_ClearMove",
+                3,"MotionControl_ResetPstop";
+
+        Param980001 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC5,                   $ Data Type
+                8,                      $ Data Size in bytes
+                "Timestamp",            $ name
+                "us",                   $ units
+                "Robot timestamp in microseconds (since boot time)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param980002 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC5,                   $ Data Type
+                8,                      $ Data Size in bytes
+                "PosUpdateTimestampUs", $ name
+                "us",                   $ units
+                "Timestamp in microseconds of the last time robot position was updated",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param980003 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC4,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "OutputChangesCount",   $ name
+                "",                     $ units
+                "Number of times a output cyclic content change was detected",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param990000 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC4,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "HostTime",             $ name
+                "",                     $ units
+                "Host absolute time in seconds since epoch (to synchronize robot's time)",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param990001 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x4000,                 $ Descriptor
+                0xD3,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "Brakes",               $ name
+                "",                     $ units
+                "Various brakes control bits",    $ help string
+                ,,1,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum990001 =
+                0,"Brakes_ControlAllowed",
+                1,"Brakes_Engaged";
+
+[Groups]
+
+[Assembly]      $ Meca500 input and output assemblies
+        Assem1 =
+                "Input Data",           $ Assembly name
+                ,                       $ Path
+                ,                       $ Assembly size
+                0x0000,
+                ,,
+                16,Param601002,
+                16,Param601001,
+                32,Param601501,
+                16,Param601502,
+                16,Param601503,
+                16,Param601504,
+                16,Param601505,
+                32,Param603001,
+                32,Param603002,
+                32,Param603003,
+                32,Param603004,
+                32,Param603005,
+                32,Param603006,
+                32,Param603101,
+                32,Param603102,
+                32,Param603103,
+                32,Param603104,
+                32,Param603105,
+                32,Param603106,
+                32,Param603201,
+                32,Param603202,
+                32,Param603203,
+                32,Param603204,
+                32,Param603205,
+                32,Param603206,
+                32,Param603301,
+                32,Param603302,
+                32,Param603303,
+                32,Param603304,
+                32,Param603305,
+                32,Param603306,
+                32,Param604001,
+                32,Param604002,
+                32,Param604003,
+                32,Param604501,
+                8,Param604601,
+                8,Param604602,
+                8,Param604603,
+                8,Param1,
+                32,Param1,
+                64,Param980001,
+                64,Param980002,
+                32,Param980003,
+                32,Param1,
+                32,Param1,
+                32,Param1;
+
+        Assem2 =
+                "Output Data",          $ Assembly name
+                ,                       $ Path
+                ,                       $ Assembly size
+                0x0000,
+                ,,
+                32,Param720001,
+                16,Param731001,
+                16,Param731002,
+                32,Param730500,
+                32,Param730501,
+                32,Param730502,
+                32,Param730503,
+                32,Param730504,
+                32,Param730505,
+                32,Param730506,
+                32,Param990000,
+                32,Param990001;
+
+[Connection Manager]
+        Object_Name = "Connection Manager Object";
+        Object_Class_Code = 0x06;
+    $ Connection 1 is an exclusive only connection
+        Connection1 =
+                0x04010002,             $ Transport classes = 2
+                                        $ Production Trigger = Cyclic
+                                        $ Transport type = Exclusive-owner
+                                        $ Client
+                0x44640405,             $ O->T fixed size supported
+                                        $ T->O fixed size supported
+                                        $ O->T Real time transfer format = 32 bit run/idle header
+                                        $ T->O Real time transfer format = Modeless
+                                        $ O->T connection type: POINT2POINT
+                                        $ T->O connection type: MULTICAST
+                                        $ T->O connection type: POINT2POINT
+                                        $ O->T priority: SCHEDULED
+                                        $ T->O priority: SCHEDULED
+                Param11,44,Assem2,      $ O->T RPI, size, format
+                Param11,168,Assem1,     $ T->O RPI, size, format
+                ,,                      $ config #1 size, format
+                ,,                      $ config #2 size, format
+                "Meca500 Exclusive",    $ Connection Name
+                "Connection to control the Meca500 robot",    $ help string
+                "20 04 2C 96 2C 64";    $ Path : assembly numbers for O->T and T->O data
+
+$ End of Meca500 EDS
