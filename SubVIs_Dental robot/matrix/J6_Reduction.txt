@@ -1,0 +1,53 @@
+
+135C_4S_2S_6 + 120C_2C_3C_4S_6 + 70C_2C_3C_6S_4 + 38C_2C_4S_3S_6 + 38C_3C_4S_2S_6 + 135C_5C_6S_2S_4 - 120C_4S_2S_3S_6 - 70C_6S_2S_3S_4 - 70C_2S_3S_5S_6 - 70C_3S_2S_5S_6 + 70C_2C_3C_4C_5S_6 + 120C_2C_3C_5C_6S_4 + 38C_2C_5C_6S_3S_4 + 38C_3C_5C_6S_2S_4 - 70C_4C_5S_2S_3S_6 - 120C_5C_6S_2S_3S_4\\
+70C_4C_6 - 38C_6S_5 - 120S_4S_6 - 70C_5S_4S_6 + 135S_3S_4S_6 + 120C_4C_5C_6 - 135C_3C_6S_5 - 135C_4C_5C_6S_3\\   
+70C_4C_6 - 38C_6S_5 - 120S_4S_6 - 70C_5S_4S_6 + 120C_4C_5C_6\\
+70S_5S_6\\
+70C_6\\
+0\\
+
+
+
+
+135C_4C_6S_2 + 120C_2C_3C_4C_6 + 38C_2C_4C_6S_3 + 38C_3C_4C_6S_2 - 70C_2C_3S_4S_6 - 120C_4C_6S_2S_3 - 70C_2C_6S_3S_5 - 70C_3C_6S_2S_5 - 135C_5S_2S_4S_6 + 70S_2S_3S_4S_6 + 70C_2C_3C_4C_5C_6 - 120C_2C_3C_5S_4S_6 - 70C_4C_5C_6S_2S_3 - 38C_2C_5S_3S_4S_6 - 38C_3C_5S_2S_4S_6 + 120C_5S_2S_3S_4S_6\\
+38S_5S_6 - 120C_6S_4 - 70C_4S_6 + 135C_6S_3S_4 + 135C_3S_5S_6 - 120C_4C_5S_6 - 70C_5C_6S_4 + 135C_4C_5S_3S_6\\
+38S_5S_6 - 120C_6S_4 - 70C_4S_6 - 120C_4C_5S_6 - 70C_5C_6S_4\\
+70C_6S_5\\
+-70S_6\\
+0\\
+
+
+
+S_4S_5(135S_2 + 23961^(1/2)cos(\theta _2 + \theta _3 - \tan ^{-1}(19/60)))\\
+38C_5 + 135C_3C_5 + 120C_4S_5 - 135C_4S_3S_5\\
+38C_5 + 120C_4S_5\\
+0\\
+0\\
+0\\
+
+
+C_2C_3S_4S_6 + C_2C_6S_3S_5 + C_3C_6S_2S_5 - S_2S_3S_4S_6 + \theta _2C_2C_3C_6S_5 + \theta _3C_2C_3C_6S_5 + \theta _4C_2C_3C_4S_6 + \theta _5C_2C_5C_6S_3 + \theta _5C_3C_5C_6S_2 + \theta _6C_2C_3C_6S_4 - \theta _2C_2S_3S_4S_6 - \theta _2C_3S_2S_4S_6 - \theta _2C_6S_2S_3S_5 - \theta _3C_2S_3S_4S_6 - \theta _3C_3S_2S_4S_6 - \theta _3C_6S_2S_3S_5 - \theta _4C_4S_2S_3S_6 - \theta _6C_6S_2S_3S_4 - \theta _6C_2S_3S_5S_6 - \theta _6C_3S_2S_5S_6 - C_2C_3C_4C_5C_6 + C_4C_5C_6S_2S_3 + \theta _2C_2C_4C_5C_6S_3 + \theta _2C_3C_4C_5C_6S_2 + \theta _3C_2C_4C_5C_6S_3 + \theta _3C_3C_4C_5C_6S_2 + \theta _4C_2C_3C_5C_6S_4 + \theta _5C_2C_3C_4C_6S_5 + \theta _6C_2C_3C_4C_5S_6 - \theta _4C_5C_6S_2S_3S_4 - \theta _5C_4C_6S_2S_3S_5 - \theta _6C_4C_5S_2S_3S_6\\
+C_4S_6 + \theta _6C_4C_6 - \theta _4S_4S_6 + C_5C_6S_4 + \theta _4C_4C_5C_6 - \theta _5C_6S_4S_5 - \theta _6C_5S_4S_6\\
+C_4S_6 + \theta _6C_4C_6 - \theta _4S_4S_6 + C_5C_6S_4 + \theta _4C_4C_5C_6 - \theta _5C_6S_4S_5 - \theta _6C_5S_4S_6\\
+\theta _6S_5S_6 - \theta _5C_5C_6 - C_6S_5\\
+S_6 + \theta _6C_6\\
+0\\
+
+
+C_2C_3C_6S_4 - C_6S_2S_3S_4 - C_2S_3S_5S_6 - C_3S_2S_5S_6 + \theta _4C_2C_3C_4C_6 - \theta _2C_2C_6S_3S_4 - \theta _2C_3C_6S_2S_4 - \theta _2C_2C_3S_5S_6 - \theta _3C_2C_6S_3S_4 - \theta _3C_3C_6S_2S_4 - \theta _3C_2C_3S_5S_6 - \theta _4C_4C_6S_2S_3 - \theta _5C_2C_5S_3S_6 - \theta _5C_3C_5S_2S_6 - \theta _6C_2C_3S_4S_6 - \theta _6C_2C_6S_3S_5 - \theta _6C_3C_6S_2S_5 + \theta _2S_2S_3S_5S_6 + \theta _3S_2S_3S_5S_6 + \theta _6S_2S_3S_4S_6 + C_2C_3C_4C_5S_6 - C_4C_5S_2S_3S_6 + \theta _6C_2C_3C_4C_5C_6 - \theta _2C_2C_4C_5S_3S_6 - \theta _2C_3C_4C_5S_2S_6 - \theta _3C_2C_4C_5S_3S_6 - \theta _3C_3C_4C_5S_2S_6 - \theta _4C_2C_3C_5S_4S_6 - \theta _5C_2C_3C_4S_5S_6 - \theta _6C_4C_5C_6S_2S_3 + \theta _4C_5S_2S_3S_4S_6 + \theta _5C_4S_2S_3S_5S_6\\
+C_4C_6 - C_5S_4S_6 - \theta _4C_6S_4 - \theta _6C_4S_6 - \theta _4C_4C_5S_6 - \theta _6C_5C_6S_4 + \theta _5S_4S_5S_6\\
+C_4C_6 - C_5S_4S_6 - \theta _4C_6S_4 - \theta _6C_4S_6 - \theta _4C_4C_5S_6 - \theta _6C_5C_6S_4 + \theta _5S_4S_5S_6\\
+S_5S_6 + \theta _5C_5S_6 + \theta _6C_6S_5\\
+C_6 - \theta _6S_6\\
+0\\
+
+
+
+\theta _2C_5S_2S_3 - C_3C_5S_2 - \theta _2C_2C_3C_5 - \theta _3C_2C_3C_5 - C_2C_5S_3 + \theta _3C_5S_2S_3 + \theta _5C_2S_3S_5 + \theta _5C_3S_2S_5 - C_2C_3C_4S_5 + C_4S_2S_3S_5 - \theta _5C_2C_3C_4C_5 + \theta _2C_2C_4S_3S_5 + \theta _2C_3C_4S_2S_5 + \theta _3C_2C_4S_3S_5 + \theta _3C_3C_4S_2S_5 + \theta _4C_2C_3S_4S_5 + \theta _5C_4C_5S_2S_3 - \theta _4S_2S_3S_4S_5\\
+S_4S_5 + \theta _4C_4S_5 + \theta _5C_5S_4\\
+S_4S_5 + \theta _4C_4S_5 + \theta _5C_5S_4\\
+C_5 - \theta _5S_5\\
+0\\
+1\\
+ 
+

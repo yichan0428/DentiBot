@@ -1,0 +1,46 @@
+120*sin(theta1)*sin(theta2)*sin(theta3) - 38*cos(theta2)*sin(theta1)*sin(theta3) - 38*cos(theta3)*sin(theta1)*sin(theta2) - 70*cos(theta1)*sin(theta4)*sin(theta5) - 135*sin(theta1)*sin(theta2) - 120*cos(theta2)*cos(theta3)*sin(theta1) - 70*cos(theta2)*cos(theta3)*cos(theta5)*sin(theta1) + 70*cos(theta5)*sin(theta1)*sin(theta2)*sin(theta3) + 70*cos(theta2)*cos(theta4)*sin(theta1)*sin(theta3)*sin(theta5) + 70*cos(theta3)*cos(theta4)*sin(theta1)*sin(theta2)*sin(theta5);
+-cos(theta1)*(120*cos(theta2)*sin(theta3) - 38*cos(theta2)*cos(theta3) - 135*cos(theta2) + 120*cos(theta3)*sin(theta2) + 38*sin(theta2)*sin(theta3) + 70*cos(theta2)*cos(theta5)*sin(theta3) + 70*cos(theta3)*cos(theta5)*sin(theta2) + 70*cos(theta2)*cos(theta3)*cos(theta4)*sin(theta5) - 70*cos(theta4)*sin(theta2)*sin(theta3)*sin(theta5));
+-2*cos(theta1)*(60*cos(theta2)*sin(theta3) - 19*cos(theta2)*cos(theta3) + 60*cos(theta3)*sin(theta2) + 19*sin(theta2)*sin(theta3) + 35*cos(theta2)*cos(theta5)*sin(theta3) + 35*cos(theta3)*cos(theta5)*sin(theta2) + 35*cos(theta2)*cos(theta3)*cos(theta4)*sin(theta5) - 35*cos(theta4)*sin(theta2)*sin(theta3)*sin(theta5));
+70*sin(theta5)*(cos(theta1)*cos(theta2)*sin(theta3)*sin(theta4) - cos(theta4)*sin(theta1) + cos(theta1)*cos(theta3)*sin(theta2)*sin(theta4));
+- 70*cos(theta5)*(sin(theta1)*sin(theta4) + cos(theta1)*cos(theta2)*cos(theta4)*sin(theta3) + cos(theta1)*cos(theta3)*cos(theta4)*sin(theta2)) - 70*cos(theta2 + theta3)*cos(theta1)*sin(theta5);
+0;
+
+135*cos(theta1)*sin(theta2) - 120*cos(theta1)*sin(theta2)*sin(theta3) - 70*sin(theta1)*sin(theta4)*sin(theta5) + 120*cos(theta1)*cos(theta2)*cos(theta3) + 38*cos(theta1)*cos(theta2)*sin(theta3) + 38*cos(theta1)*cos(theta3)*sin(theta2) + 70*cos(theta1)*cos(theta2)*cos(theta3)*cos(theta5) - 70*cos(theta1)*cos(theta5)*sin(theta2)*sin(theta3) - 70*cos(theta1)*cos(theta2)*cos(theta4)*sin(theta3)*sin(theta5) - 70*cos(theta1)*cos(theta3)*cos(theta4)*sin(theta2)*sin(theta5);
+-sin(theta1)*(120*cos(theta2)*sin(theta3) - 38*cos(theta2)*cos(theta3) - 135*cos(theta2) + 120*cos(theta3)*sin(theta2) + 38*sin(theta2)*sin(theta3) + 70*cos(theta2)*cos(theta5)*sin(theta3) + 70*cos(theta3)*cos(theta5)*sin(theta2) + 70*cos(theta2)*cos(theta3)*cos(theta4)*sin(theta5) - 70*cos(theta4)*sin(theta2)*sin(theta3)*sin(theta5));
+-2*sin(theta1)*(60*cos(theta2)*sin(theta3) - 19*cos(theta2)*cos(theta3) + 60*cos(theta3)*sin(theta2) + 19*sin(theta2)*sin(theta3) + 35*cos(theta2)*cos(theta5)*sin(theta3) + 35*cos(theta3)*cos(theta5)*sin(theta2) + 35*cos(theta2)*cos(theta3)*cos(theta4)*sin(theta5) - 35*cos(theta4)*sin(theta2)*sin(theta3)*sin(theta5));
+70*sin(theta5)*(cos(theta1)*cos(theta4) + cos(theta2)*sin(theta1)*sin(theta3)*sin(theta4) + cos(theta3)*sin(theta1)*sin(theta2)*sin(theta4));
+- 70*cos(theta5)*(cos(theta2)*cos(theta4)*sin(theta1)*sin(theta3) - cos(theta1)*sin(theta4) + cos(theta3)*cos(theta4)*sin(theta1)*sin(theta2)) - 70*cos(theta2 + theta3)*sin(theta1)*sin(theta5);
+0;
+
+
+0;
+120*sin(theta2)*sin(theta3) - 120*cos(theta2)*cos(theta3) - 38*cos(theta2)*sin(theta3) - 38*cos(theta3)*sin(theta2) - 135*sin(theta2) + 70*cos(theta5)*sin(theta2)*sin(theta3) - 70*cos(theta2)*cos(theta3)*cos(theta5) + 70*cos(theta2)*cos(theta4)*sin(theta3)*sin(theta5) + 70*cos(theta3)*cos(theta4)*sin(theta2)*sin(theta5);
+120*sin(theta2)*sin(theta3) - 38*cos(theta2)*sin(theta3) - 38*cos(theta3)*sin(theta2) - 120*cos(theta2)*cos(theta3) + 70*cos(theta5)*sin(theta2)*sin(theta3) - 70*cos(theta2)*cos(theta3)*cos(theta5) + 70*cos(theta2)*cos(theta4)*sin(theta3)*sin(theta5) + 70*cos(theta3)*cos(theta4)*sin(theta2)*sin(theta5);
+70*cos(theta2 + theta3)*sin(theta4)*sin(theta5);
+70*sin(theta2 + theta3)*sin(theta5) - 70*cos(theta2 + theta3)*cos(theta4)*cos(theta5);
+0;
+
+
+theta4*sin(theta1)*sin(theta2)*sin(theta3) - theta3*cos(theta1) - theta5*cos(theta1)*cos(theta4) - theta4*cos(theta2)*cos(theta3)*sin(theta1) - theta6*cos(theta1)*sin(theta4)*sin(theta5) - theta2*cos(theta1) - theta6*cos(theta2)*cos(theta3)*cos(theta5)*sin(theta1) - theta5*cos(theta2)*sin(theta1)*sin(theta3)*sin(theta4) - theta5*cos(theta3)*sin(theta1)*sin(theta2)*sin(theta4) + theta6*cos(theta5)*sin(theta1)*sin(theta2)*sin(theta3) + theta6*cos(theta2)*cos(theta4)*sin(theta1)*sin(theta3)*sin(theta5) + theta6*cos(theta3)*cos(theta4)*sin(theta1)*sin(theta2)*sin(theta5);
+theta5*cos(theta1)*cos(theta2)*cos(theta3)*sin(theta4) - theta4*cos(theta1)*cos(theta2)*sin(theta3) - theta4*cos(theta1)*cos(theta3)*sin(theta2) - sin(theta1) - theta6*cos(theta1)*cos(theta2)*cos(theta5)*sin(theta3) - theta6*cos(theta1)*cos(theta3)*cos(theta5)*sin(theta2) - theta5*cos(theta1)*sin(theta2)*sin(theta3)*sin(theta4) - theta6*cos(theta1)*cos(theta2)*cos(theta3)*cos(theta4)*sin(theta5) + theta6*cos(theta1)*cos(theta4)*sin(theta2)*sin(theta3)*sin(theta5);
+theta5*cos(theta1)*cos(theta2)*cos(theta3)*sin(theta4) - theta4*cos(theta1)*cos(theta2)*sin(theta3) - theta4*cos(theta1)*cos(theta3)*sin(theta2) - sin(theta1) - theta6*cos(theta1)*cos(theta2)*cos(theta5)*sin(theta3) - theta6*cos(theta1)*cos(theta3)*cos(theta5)*sin(theta2) - theta5*cos(theta1)*sin(theta2)*sin(theta3)*sin(theta4) - theta6*cos(theta1)*cos(theta2)*cos(theta3)*cos(theta4)*sin(theta5) + theta6*cos(theta1)*cos(theta4)*sin(theta2)*sin(theta3)*sin(theta5);
+theta5*(sin(theta1)*sin(theta4) + cos(theta1)*cos(theta2)*cos(theta4)*sin(theta3) + cos(theta1)*cos(theta3)*cos(theta4)*sin(theta2)) - cos(theta1)*sin(theta2)*sin(theta3) + cos(theta1)*cos(theta2)*cos(theta3) + theta6*sin(theta5)*(cos(theta1)*cos(theta2)*sin(theta3)*sin(theta4) - cos(theta4)*sin(theta1) + cos(theta1)*cos(theta3)*sin(theta2)*sin(theta4));
+- cos(theta4)*sin(theta1) - theta6*(cos(theta5)*(sin(theta1)*sin(theta4) - cos(theta4)*(cos(theta1)*sin(theta3)*sin(theta2 - pi/2) - cos(theta1)*cos(theta3)*cos(theta2 - pi/2))) - sin(theta5)*(cos(theta1)*cos(theta3)*sin(theta2 - pi/2) + cos(theta1)*cos(theta2 - pi/2)*sin(theta3))) - sin(theta4)*(cos(theta1)*sin(theta3)*sin(theta2 - pi/2) - cos(theta1)*cos(theta3)*cos(theta2 - pi/2));
+cos(theta2 + theta3)*cos(theta1)*cos(theta5) - sin(theta5)*(sin(theta1)*sin(theta4) + cos(theta1)*cos(theta2)*cos(theta4)*sin(theta3) + cos(theta1)*cos(theta3)*cos(theta4)*sin(theta2));
+
+
+theta4*cos(theta1)*cos(theta2)*cos(theta3) - theta3*sin(theta1) - theta5*cos(theta4)*sin(theta1) - theta2*sin(theta1) - theta4*cos(theta1)*sin(theta2)*sin(theta3) - theta6*sin(theta1)*sin(theta4)*sin(theta5) + theta6*cos(theta1)*cos(theta2)*cos(theta3)*cos(theta5) + theta5*cos(theta1)*cos(theta2)*sin(theta3)*sin(theta4) + theta5*cos(theta1)*cos(theta3)*sin(theta2)*sin(theta4) - theta6*cos(theta1)*cos(theta5)*sin(theta2)*sin(theta3) - theta6*cos(theta1)*cos(theta2)*cos(theta4)*sin(theta3)*sin(theta5) - theta6*cos(theta1)*cos(theta3)*cos(theta4)*sin(theta2)*sin(theta5);
+cos(theta1) - theta4*cos(theta2)*sin(theta1)*sin(theta3) - theta4*cos(theta3)*sin(theta1)*sin(theta2) + theta5*cos(theta2)*cos(theta3)*sin(theta1)*sin(theta4) - theta6*cos(theta2)*cos(theta5)*sin(theta1)*sin(theta3) - theta6*cos(theta3)*cos(theta5)*sin(theta1)*sin(theta2) - theta5*sin(theta1)*sin(theta2)*sin(theta3)*sin(theta4) - theta6*cos(theta2)*cos(theta3)*cos(theta4)*sin(theta1)*sin(theta5) + theta6*cos(theta4)*sin(theta1)*sin(theta2)*sin(theta3)*sin(theta5);
+cos(theta1) - theta4*cos(theta2)*sin(theta1)*sin(theta3) - theta4*cos(theta3)*sin(theta1)*sin(theta2) + theta5*cos(theta2)*cos(theta3)*sin(theta1)*sin(theta4) - theta6*cos(theta2)*cos(theta5)*sin(theta1)*sin(theta3) - theta6*cos(theta3)*cos(theta5)*sin(theta1)*sin(theta2) - theta5*sin(theta1)*sin(theta2)*sin(theta3)*sin(theta4) - theta6*cos(theta2)*cos(theta3)*cos(theta4)*sin(theta1)*sin(theta5) + theta6*cos(theta4)*sin(theta1)*sin(theta2)*sin(theta3)*sin(theta5);
+theta5*(cos(theta2)*cos(theta4)*sin(theta1)*sin(theta3) - cos(theta1)*sin(theta4) + cos(theta3)*cos(theta4)*sin(theta1)*sin(theta2)) + theta6*sin(theta5)*(cos(theta1)*cos(theta4) + cos(theta2)*sin(theta1)*sin(theta3)*sin(theta4) + cos(theta3)*sin(theta1)*sin(theta2)*sin(theta4)) - sin(theta1)*sin(theta2)*sin(theta3) + cos(theta2)*cos(theta3)*sin(theta1);
+cos(theta1)*cos(theta4) + sin(theta2 + theta3)*sin(theta1)*sin(theta4) - theta6*cos(theta2 + theta3)*sin(theta1)*sin(theta5) + theta6*cos(theta1)*cos(theta5)*sin(theta4) - theta6*cos(theta2)*cos(theta4)*cos(theta5)*sin(theta1)*sin(theta3) - theta6*cos(theta3)*cos(theta4)*cos(theta5)*sin(theta1)*sin(theta2);
+cos(theta2 + theta3)*cos(theta5)*sin(theta1) - sin(theta5)*(cos(theta2)*cos(theta4)*sin(theta1)*sin(theta3) - cos(theta1)*sin(theta4) + cos(theta3)*cos(theta4)*sin(theta1)*sin(theta2));
+
+
+1;
+theta6*sin(theta2 + theta3)*cos(theta4)*sin(theta5) - theta6*cos(theta2 + theta3)*cos(theta5) - theta5*sin(theta2 + theta3)*sin(theta4) - theta4*cos(theta2 + theta3);
+theta6*sin(theta2 + theta3)*cos(theta4)*sin(theta5) - theta6*cos(theta2 + theta3)*cos(theta5) - theta5*sin(theta2 + theta3)*sin(theta4) - theta4*cos(theta2 + theta3);
+theta5*cos(theta2)*cos(theta3)*cos(theta4) - cos(theta3)*sin(theta2) - cos(theta2)*sin(theta3) - theta5*cos(theta4)*sin(theta2)*sin(theta3) + theta6*cos(theta2)*cos(theta3)*sin(theta4)*sin(theta5) - theta6*sin(theta2)*sin(theta3)*sin(theta4)*sin(theta5);
+theta6*(sin(theta2 + theta3)*sin(theta5) - cos(theta2 + theta3)*cos(theta4)*cos(theta5)) + cos(theta2 + theta3)*sin(theta4);
+- sin(theta2 + theta3)*cos(theta5) - cos(theta2 + theta3)*cos(theta4)*sin(theta5);
+ 

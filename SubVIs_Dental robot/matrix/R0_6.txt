@@ -1,0 +1,16 @@
+r[0][0] = -sin(theta6)*(cos(theta4)*sin(theta1) + sin(theta4)*(cos(theta1)*sin(theta3)*sin(theta2 - pi/2) - cos(theta1)*cos(theta3)*cos(theta2 - pi/2))) - cos(theta6)*(cos(theta5)*(sin(theta1)*sin(theta4) - cos(theta4)*(cos(theta1)*sin(theta3)*sin(theta2 - pi/2) - cos(theta1)*cos(theta3)*cos(theta2 - pi/2))) - sin(theta5)*(cos(theta1)*cos(theta3)*sin(theta2 - pi/2) + cos(theta1)*cos(theta2 - pi/2)*sin(theta3)))
+r[0][1] = sin(theta6)*(cos(theta5)*(sin(theta1)*sin(theta4) - cos(theta4)*(cos(theta1)*sin(theta3)*sin(theta2 - pi/2) - cos(theta1)*cos(theta3)*cos(theta2 - pi/2))) - sin(theta5)*(cos(theta1)*cos(theta3)*sin(theta2 - pi/2) + cos(theta1)*cos(theta2 - pi/2)*sin(theta3))) - cos(theta6)*(cos(theta4)*sin(theta1) + sin(theta4)*(cos(theta1)*sin(theta3)*sin(theta2 - pi/2) - cos(theta1)*cos(theta3)*cos(theta2 - pi/2)))
+r[0][2] = -sin(theta5)*(sin(theta1)*sin(theta4) - cos(theta4)*(cos(theta1)*sin(theta3)*sin(theta2 - pi/2) - cos(theta1)*cos(theta3)*cos(theta2 - pi/2))) - cos(theta5)*(cos(theta1)*cos(theta3)*sin(theta2 - pi/2) + cos(theta1)*cos(theta2 - pi/2)*sin(theta3))
+
+
+r[1][0] = sin(theta6)*(cos(theta1)*cos(theta4) + sin(theta4)*(cos(theta3)*cos(theta2 - pi/2)*sin(theta1) - sin(theta1)*sin(theta3)*sin(theta2 - pi/2))) + cos(theta6)*(cos(theta5)*(cos(theta1)*sin(theta4) - cos(theta4)*(cos(theta3)*cos(theta2 - pi/2)*sin(theta1) - sin(theta1)*sin(theta3)*sin(theta2 - pi/2))) + sin(theta5)*(cos(theta3)*sin(theta1)*sin(theta2 - pi/2) + cos(theta2 - pi/2)*sin(theta1)*sin(theta3)))
+r[1][1] = cos(theta6)*(cos(theta1)*cos(theta4) + sin(theta4)*(cos(theta3)*cos(theta2 - pi/2)*sin(theta1) - sin(theta1)*sin(theta3)*sin(theta2 - pi/2))) - sin(theta6)*(cos(theta5)*(cos(theta1)*sin(theta4) - cos(theta4)*(cos(theta3)*cos(theta2 - pi/2)*sin(theta1) - sin(theta1)*sin(theta3)*sin(theta2 - pi/2))) + sin(theta5)*(cos(theta3)*sin(theta1)*sin(theta2 - pi/2) + cos(theta2 - pi/2)*sin(theta1)*sin(theta3)))
+r[1][2] = sin(theta5)*(cos(theta1)*sin(theta4) - cos(theta4)*(cos(theta3)*cos(theta2 - pi/2)*sin(theta1) - sin(theta1)*sin(theta3)*sin(theta2 - pi/2))) - cos(theta5)*(cos(theta3)*sin(theta1)*sin(theta2 - pi/2) + cos(theta2 - pi/2)*sin(theta1)*sin(theta3))
+
+
+r[2][0] = cos(theta6)*(sin(theta5)*(cos(theta3)*cos(theta2 - pi/2) - sin(theta3)*sin(theta2 - pi/2)) + cos(theta4)*cos(theta5)*(cos(theta3)*sin(theta2 - pi/2) + cos(theta2 - pi/2)*sin(theta3))) - sin(theta4)*sin(theta6)*(cos(theta3)*sin(theta2 - pi/2) + cos(theta2 - pi/2)*sin(theta3))
+r[2][1] = -sin(theta6)*(sin(theta5)*(cos(theta3)*cos(theta2 - pi/2) - sin(theta3)*sin(theta2 - pi/2)) + cos(theta4)*cos(theta5)*(cos(theta3)*sin(theta2 - pi/2) + cos(theta2 - pi/2)*sin(theta3))) - cos(theta6)*sin(theta4)*(cos(theta3)*sin(theta2 - pi/2) + cos(theta2 - pi/2)*sin(theta3))
+r[2][2] = cos(theta4)*sin(theta5)*(cos(theta3)*sin(theta2 - pi/2) + cos(theta2 - pi/2)*sin(theta3)) - cos(theta5)*(cos(theta3)*cos(theta2 - pi/2) - sin(theta3)*sin(theta2 - pi/2))
+
+
+ 
