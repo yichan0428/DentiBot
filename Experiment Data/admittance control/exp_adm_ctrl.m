@@ -1,8 +1,8 @@
 clear; clc;
 close all;
 %% -------------------------- Read file ------------------------
- ccfilename = 'vertical0514_2.xlsx';         
-%filename = 'horizontal0514_2.xlsx';
+%filename = 'vertical0514_2.xlsx';         
+filename = 'horizontal0514_5.xlsx';
 data = readtable(filename);
 data = table2array(data);
 data=data(:,:);
