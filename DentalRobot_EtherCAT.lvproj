@@ -89,6 +89,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="copy.vi" Type="VI" URL="../../copy.vi"/>
 		<Item Name="PC_test.vi" Type="VI" URL="../PC_test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -150,6 +151,11 @@
 				<Item Name="WDT Number of Waveform Samples SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples SGL.vi"/>
 			</Item>
 			<Item Name="angle_between_two_vectors.vi" Type="VI" URL="../SubVIs_Dental robot/angle_between_two_vectors.vi"/>
+			<Item Name="caculatekinematics.vi" Type="VI" URL="../../Labview_code/caculatekinematics.vi"/>
+			<Item Name="Control 1.ctl" Type="VI" URL="../../Labview_code/FPGA Bitfiles/Control 1.ctl"/>
+			<Item Name="Delay count.vi" Type="VI" URL="../../Labview_code/Delay count.vi"/>
+			<Item Name="K avg array.vi" Type="VI" URL="../../Labview_code/K avg array.vi"/>
+			<Item Name="K avg filter.vi" Type="VI" URL="../SubVIs_Dental robot/K avg filter.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="RotateMatrix.vi" Type="VI" URL="../SubVIs_Dental robot/RotateMatrix.vi"/>
 		</Item>
@@ -327,6 +333,7 @@ AddOutputFilter chunkFilter
 			<Item Name="R6_0.vi" Type="VI" URL="../SubVIs_Dental robot/R6_0.vi"/>
 			<Item Name="Simple PID.vi" Type="VI" URL="../SubVIs_Dental robot/Simple PID.vi"/>
 			<Item Name="K avg filter (using FIR vi).vi" Type="VI" URL="../SubVIs_Dental robot/K avg filter (using FIR vi).vi"/>
+			<Item Name="Move-Move Command.vi" Type="VI" URL="../SubVIs_Dental robot/Move-Move Command.vi"/>
 		</Item>
 		<Item Name="Exp" Type="Folder">
 			<Item Name="TCP_finding.vi" Type="VI" URL="../Experiement/TCP_finding.vi"/>
