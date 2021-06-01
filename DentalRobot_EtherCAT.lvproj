@@ -334,6 +334,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Simple PID.vi" Type="VI" URL="../SubVIs_Dental robot/Simple PID.vi"/>
 			<Item Name="K avg filter (using FIR vi).vi" Type="VI" URL="../SubVIs_Dental robot/K avg filter (using FIR vi).vi"/>
 			<Item Name="Move-Move Command.vi" Type="VI" URL="../SubVIs_Dental robot/Move-Move Command.vi"/>
+			<Item Name="Analytical Jacobian Matrix.vi" Type="VI" URL="../SubVIs_Dental robot/Analytical Jacobian Matrix.vi"/>
 		</Item>
 		<Item Name="Exp" Type="Folder">
 			<Item Name="TCP_finding.vi" Type="VI" URL="../Experiement/TCP_finding.vi"/>
