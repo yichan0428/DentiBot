@@ -151,6 +151,11 @@
 				<Item Name="WDT Number of Waveform Samples SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples SGL.vi"/>
 			</Item>
 			<Item Name="angle_between_two_vectors.vi" Type="VI" URL="../SubVIs_Dental robot/angle_between_two_vectors.vi"/>
+			<Item Name="caculatekinematics.vi" Type="VI" URL="../../Labview_code/caculatekinematics.vi"/>
+			<Item Name="Control 1.ctl" Type="VI" URL="../../Labview_code/FPGA Bitfiles/Control 1.ctl"/>
+			<Item Name="Delay count.vi" Type="VI" URL="../../Labview_code/Delay count.vi"/>
+			<Item Name="K avg array.vi" Type="VI" URL="../../Labview_code/K avg array.vi"/>
+			<Item Name="K avg filter.vi" Type="VI" URL="../SubVIs_Dental robot/K avg filter.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="RotateMatrix.vi" Type="VI" URL="../SubVIs_Dental robot/RotateMatrix.vi"/>
 		</Item>
@@ -3392,11 +3397,6 @@ AddOutputFilter chunkFilter
 					<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
 					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
 				</Item>
-				<Item Name="jmslib.lvlib" Type="Library" URL="../UCLA_Library/jmslib.lvlib"/>
-				<Item Name="spi_single_master.vi" Type="VI" URL="../UCLA_Library/labview2010/kevLib2010/FPGA Utilities/Serial Communication/spi_single_master.vi"/>
-				<Item Name="kevLib2011.lvlib" Type="Library" URL="../UCLA_Library/kevLib2011.lvlib"/>
-				<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-				<Item Name="kevLib2010.lvlib" Type="Library" URL="../UCLA_Library/kevLib2010.lvlib"/>
 			</Item>
 			<Item Name="Build Specifications" Type="Build">
 				<Item Name="FPGA" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
