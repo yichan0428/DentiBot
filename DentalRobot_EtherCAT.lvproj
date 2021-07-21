@@ -9,76 +9,73 @@
 	<Property Name="PrivateNetwork.NumComputingDevices" Type="Int">1</Property>
 	<Property Name="PrivateNetwork.SMBOffset" Type="Int">66</Property>
 	<Property Name="PrivateNetwork.UDPPort" Type="UInt">40000</Property>
-	<Property Name="varPersistentID:{01860A45-5986-4BE3-9D97-886FD059C495}" Type="Ref">/Chan's target/EtherCAT Master/Device/End-Effector Pose-SubIndex 002</Property>
-	<Property Name="varPersistentID:{024BE940-9E0C-4367-8267-61E608803928}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-SubIndex 003</Property>
-	<Property Name="varPersistentID:{02944F79-E3E9-4DC6-A344-E62B2CD8845C}" Type="Ref">/Chan's target/EtherCAT Master/Device/End-Effector Pose-SubIndex 001</Property>
-	<Property Name="varPersistentID:{029FCBA7-7DAF-4421-BFCA-338EA3378B20}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-SubIndex 001</Property>
-	<Property Name="varPersistentID:{037C9419-E956-44D7-A31E-65D14FCFB8F0}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Status-SimActivated</Property>
-	<Property Name="varPersistentID:{03D4940B-F5F3-4F98-B7A9-BF5C99B71AE7}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint velocities-SubIndex 005</Property>
-	<Property Name="varPersistentID:{055BC72C-C732-459D-B338-3D6D99E2CD96}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Ty</Property>
-	<Property Name="varPersistentID:{06F4D8B9-D76F-4916-AFB1-49749D397D41}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint Set-SubIndex 002</Property>
-	<Property Name="varPersistentID:{0A3A9321-880F-4A40-8E62-EA0F4AC3ECDC}" Type="Ref">/Chan's target/EtherCAT Master/Device/Accelerometer-Y</Property>
-	<Property Name="varPersistentID:{0E117820-8B77-46B9-92DB-C7E8CA4B0A28}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-SubIndex 006</Property>
-	<Property Name="varPersistentID:{104DE227-77F2-46E3-8B1A-A17362CE1D38}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint Set-SubIndex 004</Property>
-	<Property Name="varPersistentID:{23647F19-1C9F-442B-8008-55961CB1FAE4}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-Move ID</Property>
-	<Property Name="varPersistentID:{25175B03-08E1-4C67-A7C9-175AE1B60925}" Type="Ref">/Chan's target/EtherCAT Master/Device/Torque Ratio-SubIndex 004</Property>
-	<Property Name="varPersistentID:{2738B49F-721C-40FC-BCC5-D293AD56B3DA}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Control-Deactivate</Property>
-	<Property Name="varPersistentID:{27EC616D-AA05-40D2-9451-6AD7F3A19226}" Type="Ref">/Chan's target/EtherCAT Master/Device/Torque Ratio-SubIndex 001</Property>
-	<Property Name="varPersistentID:{284F2B6B-22CA-4E80-9188-B80FE8A531B3}" Type="Ref">/Chan's target/EtherCAT Master/Device/Accelerometer-Z</Property>
-	<Property Name="varPersistentID:{28AB1D63-821E-4F42-B5E6-E6587FC1D492}" Type="Ref">/Chan's target/EtherCAT Master/Device/Accelerometer-X</Property>
-	<Property Name="varPersistentID:{2AF14AD4-C5D3-448A-8A37-901D8CFF16CC}" Type="Ref">/Chan's target/EtherCAT Master/Device/End-Effector Pose-SubIndex 004</Property>
-	<Property Name="varPersistentID:{2BB7BF96-8119-4DA9-86FB-175ADDE0D560}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint velocities-SubIndex 006</Property>
-	<Property Name="varPersistentID:{2EC9B701-763B-4C8F-8B2C-66BF2FCD0A66}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-EOB</Property>
-	<Property Name="varPersistentID:{30414CAA-ACBE-4EBC-8262-01DDFA9B7FFD}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-SubIndex 002</Property>
-	<Property Name="varPersistentID:{38432FA9-59F8-4D50-916B-FC10F9B6ED03}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint Set-SubIndex 006</Property>
-	<Property Name="varPersistentID:{3A8544F2-C108-4688-8B7B-E4E1CD68D27C}" Type="Ref">/Chan's target/EtherCAT Master/Device/Torque Ratio-SubIndex 006</Property>
-	<Property Name="varPersistentID:{42E4B39F-0478-463B-B20F-B8620BB34E05}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Control-SetPoint</Property>
-	<Property Name="varPersistentID:{4AF2521A-73D8-4F38-9F0F-5D5394136C7C}" Type="Ref">/Chan's target/EtherCAT Master/Device/Configurations-A5</Property>
-	<Property Name="varPersistentID:{4C67883F-4B17-4DAF-89DC-BD9CE8BE4E24}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-FIFO Space</Property>
-	<Property Name="varPersistentID:{4D158998-5B2E-4CDF-8416-EF30374182F7}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint velocities-SubIndex 003</Property>
-	<Property Name="varPersistentID:{4EC28D4C-AFB5-4F0A-A9A8-A09B37581E87}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Control-Reset PStop</Property>
-	<Property Name="varPersistentID:{55575538-8670-4BA4-878B-1827900A16BA}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Fx</Property>
-	<Property Name="varPersistentID:{687A6385-A938-4A67-91F0-CA5ADC896D13}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-EOM</Property>
-	<Property Name="varPersistentID:{6ACA255D-055A-4FFB-A532-16859CAD4BEA}" Type="Ref">/Chan's target/EtherCAT Master/Device/Configurations-A3</Property>
-	<Property Name="varPersistentID:{6FBCA07E-4F20-4D9F-B822-A609F7776CA6}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Status Code</Property>
-	<Property Name="varPersistentID:{70771C78-D4A0-49FB-9CC7-C7B443981D23}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Control-Sim Mode</Property>
-	<Property Name="varPersistentID:{722FE3F1-4A6F-46B8-933E-2D8CF37191CA}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Fy</Property>
-	<Property Name="varPersistentID:{7BBB2E0E-6965-47DD-A28B-5208787D6D9C}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Control-Home</Property>
-	<Property Name="varPersistentID:{7BCAC251-0D80-4698-B150-8596336DC072}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Status-Activated</Property>
-	<Property Name="varPersistentID:{7D2AC642-7629-4A90-A37D-6A31428A1740}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Control Codes-Control 2</Property>
-	<Property Name="varPersistentID:{7D53F703-76B4-4E51-8F3F-CBBE94F8E054}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Status-Busy</Property>
-	<Property Name="varPersistentID:{7F82931C-CC5E-4431-9D8C-3D0307172BBD}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint velocities-SubIndex 004</Property>
-	<Property Name="varPersistentID:{82A8E762-4B1F-4FBA-B54D-F9092917275B}" Type="Ref">/Chan's target/EtherCAT Master/Device/End-Effector Pose-SubIndex 003</Property>
-	<Property Name="varPersistentID:{82EB55AF-040F-4EAC-B659-CAF0DDFAC621}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-FIFO Cleared</Property>
-	<Property Name="varPersistentID:{85D66094-5A07-4AD2-A593-827BB748911C}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Status-Homed</Property>
-	<Property Name="varPersistentID:{867C6BA9-D31F-4497-9ED7-6B7E91B09466}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Tz</Property>
-	<Property Name="varPersistentID:{8C1ADFD7-862E-473D-9593-0E9C7339D8F1}" Type="Ref">/Chan's target/EtherCAT Master/Device/End-Effector Pose-SubIndex 006</Property>
-	<Property Name="varPersistentID:{915BBC49-A94C-4039-BC10-CDFBAA8419A3}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-PStop</Property>
-	<Property Name="varPersistentID:{9D5827F3-303D-4BB6-9F33-16E8AF30E207}" Type="Ref">/Chan's target/EtherCAT Master/Device/Torque Ratio-SubIndex 005</Property>
-	<Property Name="varPersistentID:{9E824A5A-E7F7-46ED-9E22-A9DC455F1373}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint velocities-SubIndex 002</Property>
-	<Property Name="varPersistentID:{9F83B566-5315-469A-85FF-BD8827B22F98}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint Set-SubIndex 005</Property>
-	<Property Name="varPersistentID:{A8C723A1-284C-4679-9F2C-1C3FDC6B468A}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint velocities-SubIndex 001</Property>
-	<Property Name="varPersistentID:{AB382D38-8FD6-46DE-9F3D-CA1DF85BEEA9}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Status-Error</Property>
-	<Property Name="varPersistentID:{AD9B8B65-091E-4DEC-BFF9-C9E9213D0D67}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Control-Clear Move</Property>
-	<Property Name="varPersistentID:{B03A70FB-E85A-4F09-8491-A61CBFD4BD4A}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-Move Command</Property>
-	<Property Name="varPersistentID:{B0A00FAD-5405-4260-8DB1-5941E45FFA20}" Type="Ref">/Chan's target/EtherCAT Master/Device/End-Effector Pose-SubIndex 005</Property>
-	<Property Name="varPersistentID:{B49C03FD-5A10-4225-80D0-43EEE75CE658}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Control Codes-Control 1</Property>
-	<Property Name="varPersistentID:{BB910EAC-C988-45B3-A589-EA04B508A560}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Control-Reset Error</Property>
-	<Property Name="varPersistentID:{BC9C8EA1-3977-4273-91B4-46577599CBB3}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint Set-SubIndex 003</Property>
-	<Property Name="varPersistentID:{BD8962E7-80C4-41CC-917D-CF07EF4DA8A1}" Type="Ref">/Chan's target/EtherCAT Master/Device/Torque Ratio-SubIndex 002</Property>
-	<Property Name="varPersistentID:{C4784DFB-2757-4882-A72A-A14911A838FE}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Control-Pause</Property>
-	<Property Name="varPersistentID:{C53008BA-79FE-41FC-ACE7-AD17AAA24082}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Tx</Property>
-	<Property Name="varPersistentID:{CADC8FF5-791D-428A-B339-7133018FB5FF}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Control-Activate</Property>
-	<Property Name="varPersistentID:{CC69709E-9484-45A0-B4E2-2801665B9975}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Sample Counter</Property>
-	<Property Name="varPersistentID:{D4428457-3046-41C5-A8B8-51D3BF9FCDF7}" Type="Ref">/Chan's target/EtherCAT Master/Device/Configurations-A1</Property>
-	<Property Name="varPersistentID:{DBBCB048-7DCB-4BAE-9D0C-318FB27287EF}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-CheckPoint</Property>
-	<Property Name="varPersistentID:{DDB7D306-EBDE-4990-82BF-3C5D413A199D}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-SubIndex 005</Property>
-	<Property Name="varPersistentID:{F0BEB39B-F5B7-4161-8342-A631DB0BF9B8}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Control-Move ID</Property>
-	<Property Name="varPersistentID:{F75E3880-3B25-42F5-A48A-A7B2FF4D4E02}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-Paused</Property>
-	<Property Name="varPersistentID:{FBE04EAF-69BB-4870-B349-19E6124E3BA8}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-SubIndex 004</Property>
-	<Property Name="varPersistentID:{FDB16B3C-D7AF-4F05-A19F-0461AAC89713}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint Set-SubIndex 001</Property>
-	<Property Name="varPersistentID:{FEB17305-E7E9-4E11-98EA-92B0093B4C56}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Fz</Property>
-	<Property Name="varPersistentID:{FF8BA7B0-9DB0-4695-9686-D418F03A8703}" Type="Ref">/Chan's target/EtherCAT Master/Device/Torque Ratio-SubIndex 003</Property>
+	<Property Name="varPersistentID:{026862F0-B6B6-4A97-AF74-9749704ED487}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Status-Error</Property>
+	<Property Name="varPersistentID:{035E5F7C-5F7C-4F7C-A1EB-0769B64A3878}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-Move Command</Property>
+	<Property Name="varPersistentID:{0642483B-CA79-44CA-A0C5-75D9FCF4E717}" Type="Ref">/Chan's target/EtherCAT Master/Device/Torque Ratio-SubIndex 001</Property>
+	<Property Name="varPersistentID:{15CC58CF-F079-4AFA-AE2B-78AD99E08D8D}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Status-Busy</Property>
+	<Property Name="varPersistentID:{19844AE8-2F00-4181-AABC-2A517983BB71}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Status-SimActivated</Property>
+	<Property Name="varPersistentID:{1F3C68BE-7637-4658-A0C3-584EAE517A38}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Status Code</Property>
+	<Property Name="varPersistentID:{22DCC2EE-D62F-4565-AEAA-9AF9F2616410}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-SubIndex 004</Property>
+	<Property Name="varPersistentID:{288A0BFB-64E7-4DE1-B2C9-7D0FE40DF610}" Type="Ref">/Chan's target/EtherCAT Master/Device/End-Effector Pose-SubIndex 002</Property>
+	<Property Name="varPersistentID:{2E5B798A-EE86-41B7-A41B-C6BCF09CD5DE}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-FIFO Space</Property>
+	<Property Name="varPersistentID:{32EFCA7B-AB1D-4625-A9FA-DE9DD5DD2CA9}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-CheckPoint</Property>
+	<Property Name="varPersistentID:{363C8690-A703-4400-9D0C-4B7F125F6958}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-Move ID</Property>
+	<Property Name="varPersistentID:{36940A25-820A-46D5-B555-43B629A0D888}" Type="Ref">/Chan's target/EtherCAT Master/Device/End-Effector Pose-SubIndex 004</Property>
+	<Property Name="varPersistentID:{38F2C64E-83FE-4282-984C-BF8A9E1DEB68}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Control-SetPoint</Property>
+	<Property Name="varPersistentID:{39BF9307-2E1E-42D0-BA47-7A52AC3236EE}" Type="Ref">/Chan's target/EtherCAT Master/Device/Accelerometer-Y</Property>
+	<Property Name="varPersistentID:{3EB7D77B-E146-47D9-BDFF-8F1054A7BDCC}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-SubIndex 001</Property>
+	<Property Name="varPersistentID:{4BD880D9-87D1-46E0-A4E4-B8A36E719C65}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint velocities-SubIndex 001</Property>
+	<Property Name="varPersistentID:{4D20640C-94E6-4C9C-A9D0-F212EFC78BE0}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-PStop</Property>
+	<Property Name="varPersistentID:{4FDE7E56-720E-44B4-A7CA-253F579797CC}" Type="Ref">/Chan's target/EtherCAT Master/Device/End-Effector Pose-SubIndex 001</Property>
+	<Property Name="varPersistentID:{54134296-2988-45F3-9F6C-EBA88828E0A3}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Control Codes-Control 1</Property>
+	<Property Name="varPersistentID:{549F9EEF-E668-451B-BC91-EE52040652B8}" Type="Ref">/Chan's target/EtherCAT Master/Device/Torque Ratio-SubIndex 005</Property>
+	<Property Name="varPersistentID:{59BB823A-08EF-4229-8D34-C319F8850D32}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Control-Pause</Property>
+	<Property Name="varPersistentID:{5D3BF3BD-2B50-4594-B59A-18FAFFF52FC9}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Control Codes-Control 2</Property>
+	<Property Name="varPersistentID:{5D9B7B32-A59A-49B8-BB61-92DD89FB3C6E}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-SubIndex 003</Property>
+	<Property Name="varPersistentID:{5E13BB64-4D13-4DFF-B20E-525AAC755259}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Control-Home</Property>
+	<Property Name="varPersistentID:{5FB13009-9A47-4D5E-BAA1-8231C086A43B}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint Set-SubIndex 003</Property>
+	<Property Name="varPersistentID:{622011E4-7B56-405D-9B8B-A1A70C2C1BE4}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Fx</Property>
+	<Property Name="varPersistentID:{674F7FDA-AE40-4C0F-8B5C-8C1764791337}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Tx</Property>
+	<Property Name="varPersistentID:{6F3A3A24-E617-424F-A856-27EF0093204E}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Status-Homed</Property>
+	<Property Name="varPersistentID:{730F5886-14C8-464F-BB66-75C623F3A0EF}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Control-Reset Error</Property>
+	<Property Name="varPersistentID:{737A1E16-3FDB-4A5C-B13C-829C7927E795}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint Set-SubIndex 001</Property>
+	<Property Name="varPersistentID:{767A98E3-DF38-48B9-8674-DAFB18721078}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint Set-SubIndex 004</Property>
+	<Property Name="varPersistentID:{772B8E92-57D8-4E72-89B1-430603C15FB5}" Type="Ref">/Chan's target/EtherCAT Master/Device/Accelerometer-Z</Property>
+	<Property Name="varPersistentID:{7DB1F296-E364-48E1-87BE-08C1EE313771}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint Set-SubIndex 005</Property>
+	<Property Name="varPersistentID:{7FD3BA40-7C60-4D60-B971-951A653061E5}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-SubIndex 002</Property>
+	<Property Name="varPersistentID:{81FAE5F5-4DE3-4E20-884C-9C59201C8B84}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint velocities-SubIndex 003</Property>
+	<Property Name="varPersistentID:{859336E5-4B64-4682-8303-34AC31A61679}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Fy</Property>
+	<Property Name="varPersistentID:{8676AB75-2EAC-426C-A9CB-C4C832F664E9}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Ty</Property>
+	<Property Name="varPersistentID:{8687B827-C960-44CF-BD05-E2B19ED7D17F}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint Set-SubIndex 002</Property>
+	<Property Name="varPersistentID:{874546D7-5496-4863-8A2F-45413B3ECFBA}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Control-Deactivate</Property>
+	<Property Name="varPersistentID:{893F8100-C94E-4A01-AA6C-0D39E6A83D1A}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Status-Activated</Property>
+	<Property Name="varPersistentID:{8AD014E4-AB0A-4729-895B-018B0D9DBA91}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-FIFO Cleared</Property>
+	<Property Name="varPersistentID:{928562B0-5CD0-4CDC-876D-8057FAF6242B}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-EOB</Property>
+	<Property Name="varPersistentID:{93B88068-25DA-4F3D-98CF-6F81199DE6A4}" Type="Ref">/Chan's target/EtherCAT Master/Device/Accelerometer-X</Property>
+	<Property Name="varPersistentID:{9EF2532B-2E9A-47B6-8ACC-8A25BFCEDBFB}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-SubIndex 005</Property>
+	<Property Name="varPersistentID:{9EF6CFC3-131C-49CF-9120-374D5111C37D}" Type="Ref">/Chan's target/EtherCAT Master/Device/End-Effector Pose-SubIndex 005</Property>
+	<Property Name="varPersistentID:{A48553CB-D461-4ADB-AD27-3ACD27766CC4}" Type="Ref">/Chan's target/EtherCAT Master/Device/Torque Ratio-SubIndex 006</Property>
+	<Property Name="varPersistentID:{A6A67F2A-8163-4F3C-B73A-BA8A120C2164}" Type="Ref">/Chan's target/EtherCAT Master/Device/Torque Ratio-SubIndex 004</Property>
+	<Property Name="varPersistentID:{A90B84E4-07F2-485E-93CC-63C580031E8B}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint velocities-SubIndex 004</Property>
+	<Property Name="varPersistentID:{AA6553D4-AD62-48C3-9FDE-A040403FAE29}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Control-Activate</Property>
+	<Property Name="varPersistentID:{BB1F5663-8BB0-473E-8C4C-42624FE68C5F}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-EOM</Property>
+	<Property Name="varPersistentID:{BB509FB6-BE5C-4BC1-BBB4-EC131933FD15}" Type="Ref">/Chan's target/EtherCAT Master/Device/Torque Ratio-SubIndex 003</Property>
+	<Property Name="varPersistentID:{BCD4D678-A668-401C-9B01-5CA7FE4565A3}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Sample Counter</Property>
+	<Property Name="varPersistentID:{BE55D85C-9A61-44D1-89DA-4B04D6B1A022}" Type="Ref">/Chan's target/EtherCAT Master/Device/Robot Control-Sim Mode</Property>
+	<Property Name="varPersistentID:{BFB33014-B171-4336-B10B-8ACF0DB2D70A}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint velocities-SubIndex 006</Property>
+	<Property Name="varPersistentID:{C061F094-61F1-4F6A-8B26-DCC848920632}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint velocities-SubIndex 002</Property>
+	<Property Name="varPersistentID:{CB48593F-0E76-457B-A9E2-92C20B060746}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Control-Move ID</Property>
+	<Property Name="varPersistentID:{CE095D14-7F40-4CD0-8594-30576FF6B4DD}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Fz</Property>
+	<Property Name="varPersistentID:{D11779DD-3A41-4DE7-B188-0F3FD29BC4C7}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Status-Paused</Property>
+	<Property Name="varPersistentID:{D78C2ACD-2DE2-48A5-A83E-C7D88B2C1A2E}" Type="Ref">/Chan's target/EtherCAT Master/Device/End-Effector Pose-SubIndex 006</Property>
+	<Property Name="varPersistentID:{D828C61F-F9A3-45B9-8391-F31B5AAAD369}" Type="Ref">/Chan's target/EtherCAT Master/Device/End-Effector Pose-SubIndex 003</Property>
+	<Property Name="varPersistentID:{D8DB3E63-54C3-4D28-ADB8-727E21ACEBCA}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Control-Reset PStop</Property>
+	<Property Name="varPersistentID:{DCA38795-E453-446E-9713-2E966339185D}" Type="Ref">/Chan's target/EtherCAT Master/Device2/Reading Data-Tz</Property>
+	<Property Name="varPersistentID:{E112B3F0-AA39-46C4-B00C-F13E376B76D3}" Type="Ref">/Chan's target/EtherCAT Master/Device/Move-SubIndex 006</Property>
+	<Property Name="varPersistentID:{E356A5A1-C2F3-4545-8044-F0ADD38E3C25}" Type="Ref">/Chan's target/EtherCAT Master/Device/Motion Control-Clear Move</Property>
+	<Property Name="varPersistentID:{F1FD1758-9039-41A0-8DC1-8697984C4027}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint Set-SubIndex 006</Property>
+	<Property Name="varPersistentID:{F314ECE9-0F59-4EDF-B7E8-1E3646574B51}" Type="Ref">/Chan's target/EtherCAT Master/Device/Torque Ratio-SubIndex 002</Property>
+	<Property Name="varPersistentID:{FBF87EDE-5884-489B-98C9-9E7D79804EEE}" Type="Ref">/Chan's target/EtherCAT Master/Device/Joint velocities-SubIndex 005</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -3439,6 +3436,8 @@ AddOutputFilter chunkFilter
 				</Item>
 			</Item>
 		</Item>
+		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
+		<Item Name="PhaseSpace.vi" Type="VI" URL="../PhaseSpace.vi"/>
 		<Item Name="EtherCAT Master" Type="ECATMaster">
 			<Property Name="ECAT.Adapter.Index" Type="UInt">0</Property>
 			<Property Name="ECAT.Master.Comments" Type="Str"></Property>
@@ -3450,34 +3449,34 @@ AddOutputFilter chunkFilter
 				<Property Name="ECAT.Description" Type="Str">Meca500</Property>
 				<Property Name="ECAT.Name" Type="Str">Device</Property>
 				<Property Name="ECAT.Slave.CoESupported" Type="Bool">true</Property>
-				<Property Name="ECAT.Slave.DCEnabled" Type="Bool">true</Property>
+				<Property Name="ECAT.Slave.DCEnabled" Type="Bool">false</Property>
 				<Property Name="ECAT.Slave.DCSupported" Type="Bool">true</Property>
 				<Property Name="ECAT.Slave.E2PROMSize" Type="UInt">2048</Property>
 				<Property Name="ECAT.Slave.EoESupported" Type="Bool">false</Property>
 				<Property Name="ECAT.Slave.FmmuCount" Type="UInt">3</Property>
 				<Property Name="ECAT.Slave.FoESupported" Type="Bool">false</Property>
 				<Property Name="ECAT.Slave.InputCorrection" Type="Int">0</Property>
-				<Property Name="ECAT.Slave.InputSyncMode" Type="UInt">2</Property>
+				<Property Name="ECAT.Slave.InputSyncMode" Type="UInt">0</Property>
 				<Property Name="ECAT.Slave.IsComplex" Type="Bool">true</Property>
 				<Property Name="ECAT.Slave.IsWatchdogTimeoutByScan" Type="Bool">true</Property>
 				<Property Name="ECAT.Slave.MB.PollRateByScan" Type="UInt">1</Property>
 				<Property Name="ECAT.Slave.NodeAddress" Type="UInt">4096</Property>
 				<Property Name="ECAT.Slave.OutputCorrection" Type="Int">0</Property>
-				<Property Name="ECAT.Slave.OutputSyncMode" Type="UInt">2</Property>
+				<Property Name="ECAT.Slave.OutputSyncMode" Type="UInt">0</Property>
 				<Property Name="ECAT.Slave.PDIWatchdogTimeoutByInc" Type="UInt">1000</Property>
 				<Property Name="ECAT.Slave.PDIWDEnabled" Type="Bool">false</Property>
 				<Property Name="ECAT.Slave.PDIWDTime" Type="UInt">10</Property>
 				<Property Name="ECAT.Slave.PositionAddress" Type="UInt">0</Property>
 				<Property Name="ECAT.Slave.ProductCode" Type="UInt">316672</Property>
 				<Property Name="ECAT.Slave.RevisionNo" Type="UInt">1</Property>
-				<Property Name="ECAT.Slave.SelectedPDOIndex" Type="Str">6656:6657:6658:6659:6660:6661:6662:6664:5632:5633:5634:</Property>
+				<Property Name="ECAT.Slave.SelectedPDOIndex" Type="Str">6656:6657:6658:6659:6660:6661:6662:5632:5633:5634:</Property>
 				<Property Name="ECAT.Slave.SerialNo" Type="UInt">0</Property>
 				<Property Name="ECAT.Slave.SMCount" Type="UInt">4</Property>
 				<Property Name="ECAT.Slave.SMWatchdogTimeoutByInc" Type="UInt">1000</Property>
 				<Property Name="ECAT.Slave.SMWDEnabled" Type="Bool">true</Property>
 				<Property Name="ECAT.Slave.SMWDTime" Type="UInt">10</Property>
 				<Property Name="ECAT.Slave.Sync0CycleByScan" Type="UInt">1</Property>
-				<Property Name="ECAT.Slave.Sync0Enabled" Type="Bool">true</Property>
+				<Property Name="ECAT.Slave.Sync0Enabled" Type="Bool">false</Property>
 				<Property Name="ECAT.Slave.Sync0Shift" Type="UInt">0</Property>
 				<Property Name="ECAT.Slave.Sync1CycleBySync0Cycle" Type="UInt">1</Property>
 				<Property Name="ECAT.Slave.Sync1Enabled" Type="Bool">false</Property>
@@ -3537,57 +3536,6 @@ AddOutputFilter chunkFilter
 					<Property Name="numTypedefs" Type="UInt">0</Property>
 					<Property Name="type" Type="Str">Industrial</Property>
 					<Property Name="typeDesc" Type="Bin">'1!!!"A!A!!!!!!"!!5!!Q!!!1!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="Configurations-A1" Type="Variable">
-					<Property Name="_pdoIndex" Type="UInt">8</Property>
-					<Property Name="ECAT.Index" Type="UInt">0</Property>
-					<Property Name="ECAT.PDO.IsTxPDO" Type="Bool">true</Property>
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">42</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">Configurations-A1</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;A!!!"A!A!!!!!!"!!5!!1!!!1!!!!!!!!!</Property>
-				</Item>
-				<Item Name="Configurations-A3" Type="Variable">
-					<Property Name="_pdoIndex" Type="UInt">8</Property>
-					<Property Name="ECAT.Index" Type="UInt">1</Property>
-					<Property Name="ECAT.PDO.IsTxPDO" Type="Bool">true</Property>
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">43</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">Configurations-A3</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;A!!!"A!A!!!!!!"!!5!!1!!!1!!!!!!!!!</Property>
-				</Item>
-				<Item Name="Configurations-A5" Type="Variable">
-					<Property Name="_pdoIndex" Type="UInt">8</Property>
-					<Property Name="ECAT.Index" Type="UInt">2</Property>
-					<Property Name="ECAT.PDO.IsTxPDO" Type="Bool">true</Property>
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">44</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">Configurations-A5</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;A!!!"A!A!!!!!!"!!5!!1!!!1!!!!!!!!!</Property>
 				</Item>
 				<Item Name="End-Effector Pose-SubIndex 001" Type="Variable">
 					<Property Name="_pdoIndex" Type="UInt">3</Property>
@@ -4721,8 +4669,6 @@ AddOutputFilter chunkFilter
 				</Item>
 			</Item>
 		</Item>
-		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="PhaseSpace.vi" Type="VI" URL="../PhaseSpace.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
@@ -4819,8 +4765,8 @@ AddOutputFilter chunkFilter
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Get Scan Engine Period.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/Get Scan Engine Period.vi"/>
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="niecatviapi.dll" Type="Document" URL="niecatviapi.dll">

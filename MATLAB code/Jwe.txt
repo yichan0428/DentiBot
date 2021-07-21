@@ -1,3 +1,0 @@
-[                                             1,                         gamma*cos(beta),             sin(beta)]
-[- beta*sin(alpha) - gamma*cos(alpha)*cos(beta), cos(alpha) + gamma*sin(alpha)*sin(beta), -cos(beta)*sin(alpha)]
-[  beta*cos(alpha) - gamma*cos(beta)*sin(alpha), sin(alpha) - gamma*cos(alpha)*sin(beta),  cos(alpha)*cos(beta)]

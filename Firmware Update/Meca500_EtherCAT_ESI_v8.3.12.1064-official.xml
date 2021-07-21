@@ -4494,7 +4494,7 @@
             <BitLen>26</BitLen>
           </Entry>
         </TxPdo>
-        <TxPdo Fixed="true" Mandatory="false" Sm="3">
+        <TxPdo Fixed="true" Mandatory="false">
           <Index>#x1A08</Index>
           <Name>Configurations</Name>
           <Entry>
